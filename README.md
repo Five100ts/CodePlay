@@ -22,6 +22,17 @@ Deste modo, o objetivo do projeto da equipe é implementar uma aplicação que p
 
 
 
+
 ![tabela1](https://user-images.githubusercontent.com/105827097/173984272-440a756b-96e8-470b-b6ff-02dd72d4fee3.png)
 
+![tabela2](https://user-images.githubusercontent.com/105827097/173984321-0d180881-c65c-4379-a0de-06ecf66ec87c.png)
 
+![tabela3](https://user-images.githubusercontent.com/105827097/173984327-0618bfb7-f736-4b1b-9220-bda24bfc6185.png)
+
+![tabela4](https://user-images.githubusercontent.com/105827097/173984367-67485dbd-35b6-4536-a849-c6189eece734.png)
+
+![tabela5](https://user-images.githubusercontent.com/105827097/173984381-c160b25f-ab8e-433c-bbc6-3dc1e14cf7e0.png)
+
+![tabela6](https://user-images.githubusercontent.com/105827097/173984446-0d87d523-cb18-4775-88bd-242ce374689b.png)
+
+![tabela7](https://user-images.githubusercontent.com/105827097/173984454-a0aa1b59-03c6-4c83-b6de-5548daef8054.png)
