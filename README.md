@@ -20,33 +20,5 @@ O nosso projeto terá como cliente a Escola Telina Barbosa da Costa, localizada 
 Notamos que, dentre as necessidades específicas do cliente, no que se diz respeito à eletiva, está a falta de suporte tecnológico na realização destas atividades. Ou seja, a finalidade da eletiva de gamificar os estudos das ciências, com o objetivo de diverti-los e atraí-los, acaba se esvaindo, visto que os alunos pouco se interessam ao realizar as atividades de criação de jogos somente manual. Portanto, a partir de conversas com a professora da eletiva, percebemos uma abundância de críticas pela falta de uso de alguma tecnologia ofertada a esses alunos na realização dos trabalhos.
 Deste modo, o objetivo do projeto da equipe é implementar uma aplicação que permita aos alunos da eletiva de Gamificação da Ciência ter um suporte tecnológico dentro da eletiva, na forma de um jogo que os ensine, de forma básica, lógica de programação. Assim, eles terão um meio digital e visual para aprender a criar jogos.
 
-|   Esquerda   |  Centralizado  |    Direita    |
-|    :---:     |     :---:      |     :---:     |
-| git status   | git status     |   git status  |
-|   Esquerda   |  Centralizado  |    Direita    |
-|    :---:     |     :---:      |     :---:     |
-| git status   | git status     |   git status  |
-|   Esquerda   |  Centralizado  |    Direita    |
-|    :---:     |     :---:      |     :---:     |
-| git status   | git status     |   git status  |
-|   Esquerda   |  Centralizado  |    Direita    |
-|    :---:     |     :---:      |     :---:     |
-| git status   | git status     |   git status  |
-|   Esquerda   |  Centralizado  |    Direita    |
-|    :---:     |     :---:      |     :---:     |
-| git status   | git status     |   git status  |
-|   Esquerda   |  Centralizado  |    Direita    |
-|    :---:     |     :---:      |     :---:     |
-| git status   | git status     |   git status  |
-|   Esquerda   |  Centralizado  |    Direita    |
-|    :---:     |     :---:      |     :---:     |
-| git status   | git status     |   git status  |
-|   Esquerda   |  Centralizado  |    Direita    |
-|    :---:     |     :---:      |     :---:     |
-| git status   | git status     |   git status  |
-|   Esquerda   |  Centralizado  |    Direita    |
-|    :---:     |     :---:      |     :---:     |
-| git status   | git status     |   git status  |
 
-
-
+[Mapeamento de funcionalidades](https://github.com/Five100ts/CodePlay/files/8915303/Documento.sem.titulo.docx)
