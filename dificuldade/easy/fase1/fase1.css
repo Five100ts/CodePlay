@@ -1,0 +1,622 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+     background-color: #5522BD;
+     margin:0;
+  }
+
+
+
+/* Menu */
+#menuE{
+    position: fixed;
+    width:5%;
+    height:11.11% ;
+    left: 2.875%;
+    top: 8.61%;
+
+  }
+  
+  
+  /* Navegação lateral do menu */
+  .sidenav {
+    height: 100%; 
+    width: 0%; /*Alterar a largura no JavaScript */
+    position: fixed; 
+    z-index: 1; /* Destaque na tela */
+    top: 0%; 
+    left: 0%;
+    background-color: #7937FF; 
+    overflow-x: hidden; /* Disativa o scroll horizontal*/
+    padding-top: 10.66%; 
+    transition: 0.5s; 
+  }
+  
+  /* Posição e propriedades do botão de fechar */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 5%;
+    right: 6%;
+    font-size: 36px;
+    margin-left: 25%;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* Botão de voltar - menu */
+  #btnBack{
+    
+    background-color: #FFAB19;
+    color: #FFFFFF;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 500;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vw;
+    border-radius: 15px;
+    width: 85%;
+    height: 14.72%;
+    left: 1.875%;
+    top: 23.61%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Botão de opções - menu */
+  #btnOption{
+    background-color: #FFAB19;
+    color: #FFFFFF;
+    font-family: "Kanit";
+    font-style: normal;
+    line-height: 36px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vw;
+    border-radius: 15px;
+    width:85%;
+    height: 14.72%;
+    left: 1.875%;
+    top: 44.16%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Botão de sair - menu */
+  #btnExit{
+    background-color: #FFAB19;
+    color: #FFFFFF;
+    font-family: "Kanit";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vw;
+    border-radius: 15px;
+    width: 85%;
+    height: 14.72%;
+    left: 1.875%;
+    top: 64.72%;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+  /*Propriedades do botão de dica*/
+  #myBtnDica {
+
+    color: none;
+    padding: 0px 0px;/*Espaçamente ao redor*/
+    margin: 0%;/*Area da margem dos quatros lados*/
+    position: fixed;
+    width:5%;
+    height:11.11%;
+    left: 90.875%;
+    top: 8.61%;
+    border: none;
+    cursor: pointer;/*Quando cursor está em cima do botão*/
+    opacity: 0.9;
+  }
+
+   /*Titulo do modal*/
+  #intru{
+    position:relative ;
+    margin: 0%;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Kanit";
+    font-style: normal;
+   font-size: 4.5vw;
+   padding: 0px;
+  }
+
+  /*Conteudo da instrução*/
+  #infutru{
+    position:relative;
+    color: #ffffff;
+    text-align: justify;
+    font-family: "Kanit";
+    font-style: medium;
+   
+    font-size: 2.375vw;
+    margin-top: 2%;
+    margin-left:4vw;
+    margin-right:4vw;
+    margin-bottom:2%;
+  }
+
+  /* O modal (background) */
+  .modal-dica {
+    display: none; 
+    position: fixed; /*Fica em um lugar*/
+    z-index: 1; /* Sobreposição desse elemento */
+    padding-top: 100px; /* Localização da caixa de mensagem */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    
+    overflow: auto; /* Ativa o scroll, se for necessario */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Propriedades do modal */
+  .modal-content-dica {
+    position: fixed;
+    background-color: #7937FF;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #7937FF;
+    border-radius:23.61vh;
+    width: 62.5%;
+    height: 55.55%;
+    left: 18.75%;
+    top: 22.22%;
+  }
+  
+  
+  /* O botão de fechar */
+  .closeDica {
+    
+    position:fixed;
+    left: 71.5%;
+    top: 26.39%;
+    width: 3.75%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .closeDica1 {
+    
+    position: fixed;
+    left:1.5%;
+    
+    top: 26.39%;
+    bottom: 65.28%;
+    width: 3.75%;
+    transition: 0.3s;
+  }
+  
+  
+  h2 {
+    text-align: center;
+  }
+  
+  /* Propriedades do botão de reiniciar */
+  #resetG{
+    position: fixed;
+    width:5%;
+    height:11.11%;
+    left: 90.875%;
+    top: 43.77%;
+
+  }
+
+  /* Propriedades do botão de confirmar */
+  #confirm{
+  position: fixed;
+  left: 90.87%;
+  right: 4.13%;
+  top: 79.17%;
+  bottom: 9.72%;
+  width:5%;
+    height:11.11%;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /*Propriedades da tela de parabéns*/
+
+  /*Propriedades do titulo*/
+  #titulo{
+    position: relative;
+    /* width: auto; */
+    /* height: auto; */
+    /* left: calc(50% + 8rem); */
+    /* top: calc(30% - 4rem); */
+    text-align: center;
+    margin-top: 10%;
+    /* padding: 0%; */
+    font-family: 'Kanit';
+    font-size: 6vw;
+    line-height: 16.66%;
+    color: #FFFFFF;
+  }
+
+
+  .modal-content-victory {
+    display: none;
+    position: fixed;
+    width: 68.75%;
+    height: 69.44%;
+    top:15.625%;
+    right:15.625%;
+    background-color: #7937FF;
+    margin: auto;
+    padding: none;
+    border: 0.06rem solid #7937FF;
+    border-radius: 4.25rem;
+    
+  }
+
+  #homeI{
+position:fixed;
+left: 37.25%;
+right: 57.75%;
+top: 63.89%;
+bottom: 25%;
+width:5%;
+    height:11.11%;
+
+  }
+
+  #levels{
+
+    position: fixed;
+left: 47.5%;
+top: 63.88%;
+    width:5%;
+    height:11.11%;
+  }
+
+  #next{
+    position:fixed;
+    width:5%;
+    height:11.11%;
+    left: 57.75%;
+    top: 63.88%;
+  }
+
+  #star1{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 27%;
+    top: 43.05%;
+
+  }
+
+  #star2{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 37%;
+    top: 43.05%;
+
+  }
+
+  #star3{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 47%;
+    top: 43.05%;
+
+  }
+
+  #star4{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 57%;
+    top: 43.05%;
+
+  }
+
+  #star5{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 67%;
+    top: 43.05%;
+
+  }
+
+
+
+
+
+
+  /*Propriedades da tela de derrota*/
+
+  /*Propriedades do titulo*/
+  #titulo2{
+    position: relative;
+    /* width: auto; */
+    /* height: auto; */
+    /* left: calc(50% + 8rem); */
+    /* top: calc(30% - 4rem); */
+    text-align: center;
+    margin-top: 10%;
+    /* padding: 0%; */
+    font-family: 'Kanit';
+    font-size: 6vw;
+    line-height: 16.66%;
+    color: #FFFFFF;
+  }
+
+
+  .modal-content-defeat {
+    display: none;
+    position: fixed;
+    width: 68.75%;
+    height: 69.44%;
+    top:15.625%;
+    right:15.625%;
+    background-color: #7937FF;
+    margin: auto;
+    padding: none;
+    border: 0.06rem solid #7937FF;
+    border-radius: 4.25rem;
+    
+  }
+
+  #homeI2{
+position:fixed;
+left: 37.25%;
+right: 57.75%;
+top: 63.89%;
+bottom: 25%;
+width:5%;
+    height:11.11%;
+
+  }
+
+  #levels2{
+
+    position: fixed;
+left: 47.5%;
+top: 63.88%;
+    width:5%;
+    height:11.11%;
+  }
+
+  #reset2{
+    position:fixed;
+    width:5%;
+    height:11.11%;
+    left: 57.75%;
+    top: 63.88%;
+  }
+
+  #eStar1{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 27%;
+    top: 43.05%;
+
+  }
+
+  #eStar2{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 37%;
+    top: 43.05%;
+
+  }
+
+  #eStar3{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 47%;
+    top: 43.05%;
+
+  }
+
+  #eStar4{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 57%;
+    top: 43.05%;
+
+  }
+
+  #eStar5{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 67%;
+    top: 43.05%;
+
+  }
+
+
+
+
+
+
+
+
+
+  /*Propriedades da tela de configuração*/
+
+#titulo3{
+  position: relative;
+    /* width: auto; */
+    /* height: auto; */
+    /* left: calc(50% + 8rem); */
+    /* top: calc(30% - 4rem); */
+    text-align: center;
+    margin-top: 6%;
+    /* padding: 0%; */
+    font-family: 'Kanit';
+    font-size: 5vw;
+    line-height: 16.66%;
+    color: #FFFFFF;
+}
+
+  #closeConfi{
+    position: fixed;
+    /* width: auto; */
+    /* height: auto; */
+    /* left: calc(50% + 8rem); */
+    /* top: calc(30% - 4rem); */
+    text-align: center;
+    margin-top: 6%;
+    /* padding: 0%; */
+    font-family: 'Kanit';
+    font-size: 5vw;
+    line-height: 16.66%;
+    color: #FFFFFF;
+  }
+  
+ #musica{
+position: fixed;
+width: 12.625%;
+height: 13.33%;
+left: 18.5%;
+top: 42.77%;
+
+font-family: 'Kanit';
+font-style: normal;
+font-weight:62.5%;
+font-size: 4vw;
+line-height: 13.33%;
+
+color: #FFFFFF;
+  }
+  
+  #efeito{
+position: fixed;
+width: 28.25%;
+height: 13.33%;
+left: 18.5%;
+top: 60.27%;
+
+font-family: 'Kanit';
+font-style: normal;
+font-weight: 62.5%;
+font-size: 4vw;
+line-height: 13.33%;
+
+color: #FFFFFF;
+  }
+
+  #infutru{
+    color: #ffffff;
+  }
+  
+
+  /* Conteudo do modal */
+  .modal-content-config {
+    display:none;
+    position: fixed;
+    width: 68.75%;
+    height: 69.44%;
+    top:15.625%;
+    right:15.625%;
+    background-color: #7937FF;
+    margin: auto;
+    padding: none;
+    border: 0.06rem solid #7937FF;
+    border-radius: 4.25rem;
+    
+  }
+
+  
+  #myRangeM{
+    position: fixed;
+    top: 49.16%;
+    left: 54%;
+  }
+  
+  #myRangeE{
+    position: fixed;
+    top: 67.77%;
+    left: 54%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 25.125%;
+    height: 0.8vh;
+    border-radius: 10px;
+    background: #ffffff;
+    outline: none;
+    opacity: none;
+    
+   /* -webkit-transition: .2s;*/
+   /* transition: opacity .2s;*/
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.56rem;
+    height: 1.56rem;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e0cdcd;
+    cursor: pointer;
+  }
+  
+
+  .closeConfi{
+    position:fixed;
+    left: 77.09%;
+    
+    top: 20.89%;
+    
+    width: 3.75%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+ 
+
+
+  

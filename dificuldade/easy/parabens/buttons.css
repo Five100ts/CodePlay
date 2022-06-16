@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #5522BD;
+    overflow: hidden;
+  }
+
+  #tituloo{
+    position: fixed;
+width: 30.25%;
+height: 16.66%;
+left: 35.375%;
+top: 15.55%;
+
+font-family: 'Kanit';
+font-style: bold;
+font-weight: 62.5%;
+font-size: 3vw;
+line-height: 16.66%;
+color: #FFFFFF;
+  }
+
+  /*professor*/
+  #titulo{
+    position: relative;
+    /* width: auto; */
+    /* height: auto; */
+    /* left: calc(50% + 8rem); */
+    /* top: calc(30% - 4rem); */
+    text-align: center;
+    margin-top: 10%;
+    /* padding: 0%; */
+    font-family: 'Kanit';
+    font-size: 6vw;
+    line-height: 16.66%;
+    color: #FFFFFF;
+  }
+
+
+  .modal-content-config {
+    position: fixed;
+    width: 68.75%;
+    height: 69.44%;
+    top:15.625%;
+    right:15.625%;
+    background-color: #7937FF;
+    margin: auto;
+    padding: none;
+    border: 0.06rem solid #7937FF;
+    border-radius: 4.25rem;
+    
+  }
+
+  #homeI{
+position:fixed;
+left: 37.25%;
+right: 57.75%;
+top: 63.89%;
+bottom: 25%;
+width:5%;
+    height:11.11%;
+
+  }
+
+  #levels{
+
+    position: fixed;
+left: 47.5%;
+top: 63.88%;
+    width:5%;
+    height:11.11%;
+  }
+
+  #next{
+    position:fixed;
+    width:5%;
+    height:11.11%;
+    left: 57.75%;
+    top: 63.88%;
+  }
+
+  #star1{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 27%;
+    top: 43.05%;
+
+  }
+
+  #star2{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 37%;
+    top: 43.05%;
+
+  }
+
+  #star3{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 47%;
+    top: 43.05%;
+
+  }
+
+  #star4{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 57%;
+    top: 43.05%;
+
+  }
+
+  #star5{
+    position: fixed;
+    width: 6.25%;
+    height: 13.88%;
+    left: 67%;
+    top: 43.05%;
+
+  }
