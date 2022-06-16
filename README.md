@@ -21,6 +21,7 @@ Notamos que, dentre as necessidades específicas do cliente, no que se diz respe
 Deste modo, o objetivo do projeto da equipe é implementar uma aplicação que permita aos alunos da eletiva de Gamificação da Ciência ter um suporte tecnológico dentro da eletiva, na forma de um jogo que os ensine, de forma básica, lógica de programação. Assim, eles terão um meio digital e visual para aprender a criar jogos.
 
 
+Mapeamento
 
 
 ![tabela1](https://user-images.githubusercontent.com/105827097/173984272-440a756b-96e8-470b-b6ff-02dd72d4fee3.png)
