@@ -21,36 +21,32 @@ Notamos que, dentre as necessidades específicas do cliente, no que se diz respe
 Deste modo, o objetivo do projeto da equipe é implementar uma aplicação que permita aos alunos da eletiva de Gamificação da Ciência ter um suporte tecnológico dentro da eletiva, na forma de um jogo que os ensine, de forma básica, lógica de programação. Assim, eles terão um meio digital e visual para aprender a criar jogos.
 
 |   Esquerda   |  Centralizado  |    Direita    |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | Essa função é atendida com a execução do arquivo “inicio.html”, tendo “linkagem” com os arquivos “inicio.css” e “inicio.js”
+|    :---:     |     :---:      |     :---:     |
+| git status   | git status     |   git status  |
+|   Esquerda   |  Centralizado  |    Direita    |
+|    :---:     |     :---:      |     :---:     |
+| git status   | git status     |   git status  |
+|   Esquerda   |  Centralizado  |    Direita    |
+|    :---:     |     :---:      |     :---:     |
+| git status   | git status     |   git status  |
+|   Esquerda   |  Centralizado  |    Direita    |
+|    :---:     |     :---:      |     :---:     |
+| git status   | git status     |   git status  |
+|   Esquerda   |  Centralizado  |    Direita    |
+|    :---:     |     :---:      |     :---:     |
+| git status   | git status     |   git status  |
+|   Esquerda   |  Centralizado  |    Direita    |
+|    :---:     |     :---:      |     :---:     |
+| git status   | git status     |   git status  |
+|   Esquerda   |  Centralizado  |    Direita    |
+|    :---:     |     :---:      |     :---:     |
+| git status   | git status     |   git status  |
+|   Esquerda   |  Centralizado  |    Direita    |
+|    :---:     |     :---:      |     :---:     |
+| git status   | git status     |   git status  |
+|   Esquerda   |  Centralizado  |    Direita    |
+|    :---:     |     :---:      |     :---:     |
+| git status   | git status     |   git status  |
 
-   |
-|   Esquerda   |  Centralizado  |    Direita    |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-|   Esquerda   |  Centralizado  |    Direita    |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-|   Esquerda   |  Centralizado  |    Direita    |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-|   Esquerda   |  Centralizado  |    Direita    |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-|   Esquerda   |  Centralizado  |    Direita    |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-|   Esquerda   |  Centralizado  |    Direita    |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-|   Esquerda   |  Centralizado  |    Direita    |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+
 
