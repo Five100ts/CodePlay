@@ -100,6 +100,15 @@ document.getElementById("myBtnDica").style.display = "none";
 }
 }
 
+function vitory(){
+  document.getElementById("conteudoModalVitory").style.display = "block";
+document.body.style.color = "#451C99";
+document.getElementById("menuE").style.display = "none";
+document.getElementById("resetG").style.display = "none";
+document.getElementById("confirm").style.display = "none";
+document.getElementById("myBtnDica").style.display = "none";
+  }
+
 function back1(){
 window.location.href='../../../inicio.html';
 }
