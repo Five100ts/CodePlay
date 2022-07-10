@@ -1,0 +1,134 @@
+html, body{
+  height:100%;
+  width:100%;
+  background-color: #5522BD;
+  background: url(icon/fundo.svg);
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: 100vw;
+  overflow: hidden;
+}
+  
+  #titulo{
+    position: relative;
+    /* width: auto; */
+    /* height: auto; */
+    /* left: calc(50% + 8rem); */
+    /* top: calc(30% - 4rem); */
+    text-align: center;
+    margin-top: 6%;
+    /* padding: 0%; */
+    font-family: 'Kanit';
+    font-size: 5vw;
+    line-height: 16.66%;
+    color: #FFFFFF;
+  }
+  
+ #musica{
+position: fixed;
+width: 12.625%;
+height: 13.33%;
+left: 18.5%;
+top: 42.77%;
+
+font-family: 'Kanit';
+font-style: normal;
+font-weight:62.5%;
+font-size: 4vw;
+line-height: 13.33%;
+
+color: #FFFFFF;
+  }
+  
+  #efeito{
+position: fixed;
+width: 28.25%;
+height: 13.33%;
+left: 18.5%;
+top: 60.27%;
+
+font-family: 'Kanit';
+font-style: normal;
+font-weight: 62.5%;
+font-size: 4vw;
+line-height: 13.33%;
+
+color: #FFFFFF;
+  }
+
+  #infutru{
+    color: #ffffff;
+  }
+  
+
+  /* Conteudo do modal */
+  .modal-content-config {
+    position: fixed;
+    width: 68.75%;
+    height: 69.44%;
+    top:15.625%;
+    right:15.625%;
+    background-color: #7937FF;
+    margin: auto;
+    padding: none;
+    border: 0.06rem solid #7937FF;
+    border-radius: 4.25rem;
+    
+  }
+
+  
+  #myRangeM{
+    position: fixed;
+    top: 49.16%;
+    left: 54%;
+  }
+  
+  #myRangeE{
+    position: fixed;
+    top: 67.77%;
+    left: 54%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 25.125%;
+    height: 0.8vh;
+    border-radius: 10px;
+    background: #ffffff;
+    outline: none;
+    opacity: none;
+    
+   /* -webkit-transition: .2s;*/
+   /* transition: opacity .2s;*/
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.56rem;
+    height: 1.56rem;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e0cdcd;
+    cursor: pointer;
+  }
+  
+
+  #back{
+    position: fixed;
+  left: 3.85%;
+  bottom: 6.06%;
+  width:5%;
+  height:11.11%;
+  }

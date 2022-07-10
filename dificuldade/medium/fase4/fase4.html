@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="fase4.css" >
+  <link href='https://css.gg/chevron-left-o.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kanit:wght@300;500;700&family=Orbitron:wght@500&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kanit:wght@300;500;700&display=swap');
+  </style>
+</head>
+
+<body>
+  <!--Criação do menu lateral-->
+  <p id="demo"></p>
+  <div id="mySidenav" class="sidenav">
+    <!--Botões do menu-->
+    <input type="image" src = "icons/sair.svg"  class="closebtn" onclick="closeNav()">
+      <button id="btnBack" onclick="closeNav()" >Voltar</button>
+      <br>
+      <button id="btnOption"  onclick="confi()">Opções</button>
+      <br>
+      <button id="btnExit" onclick="exit()">Sair</button>
+  </div>
+  <!--Criação do botão de dica-->
+  <div id="myModalDica" class="modal-dica">
+  <!-- Conteudo do Modal - Dica aparecera para o jogador -->
+    <div id = conteudoModalDica class="modal-content-dica">
+      
+      <h2 id="intru">Instrução</h2>
+      <h3 id="infutru">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet risus convallis, varius ipsum ac, laoreet massa. Donec tempus.</h3>
+      <input type="image" src = "icons/sair.svg" class="closeDica">
+    </div>
+  </div>
+      
+  <!--Tela de vitoria-->
+
+  <div id = conteudoModalVitory class="modal-content-victory">
+    <p id ="titulo">PARABÉNS</p>
+
+    <input type="image" src="icons/star.svg" id ="star1">
+    <input type="image" src="icons/star.svg" id ="star2">
+    <input type="image" src="icons/star.svg" id ="star3">
+    <input type="image" src="icons/star.svg" id ="star4">
+    <input type="image" src="icons/star.svg" id ="star5">
+    
+
+    <input type="image" src="icons/home.svg" id ="homeI" onclick="back1()">
+    <input type="image" src="icons/niveis.svg" id ="levels" onclick="exit()">
+    <input type="image" src="icons/next.svg" id ="next" onclick="next()">
+    </div>
+
+
+  <!--Tela de derrota-->
+
+  <div id = "conteudoModalDefeat" class="modal-content-defeat">
+    <p id ="titulo2">TENTE NOVAMENTE</p>
+
+    <input type="image" src="icons/eStar.svg" id ="eStar1">
+    <input type="image" src="icons/eStar.svg" id ="eStar2">
+    <input type="image" src="icons/eStar.svg" id ="eStar3">
+    <input type="image" src="icons/eStar.svg" id ="eStar4">
+    <input type="image" src="icons/eStar.svg" id ="eStar5">
+    
+
+    <input type="image" src="icons/home.svg" id ="homeI2" onclick="back1()">
+    <input type="image" src="icons/niveis.svg" id ="levels2" onclick="exit()">
+    <input type="image" src="icons/reset.svg" id ="reset2" onclick="reset()">
+    </div>
+      
+
+    <!--Tela de configurações-->
+
+    <div id = conteudoModalConfig class="modal-content-config">
+      <p id ="titulo3">Configurações</p>
+      <p id="musica">Música</p>
+          <p id="efeito">Efeitos sonoros</p>
+      <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="39" class="slider" id="myRangeM">      
+      </div>
+
+      <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="25" class="slider" id="myRangeE">
+      </div>
+      <input type="image" src = "icons/sair.svg" class="closeConfi" onclick="closeConfi()">
+
+          </div>
+
+
+  <!-- Outros botões da tela -->
+  <input type="image" src = "icons/menu.svg" id="menuE" onclick="openNav()">
+  <input type="image" src = "icons/reset.svg" id="resetG" onclick="reset()">
+  <input type="image" src = "icons/confirm.svg" id="confirm" onclick="randomN()">
+  <input type= "image"  src="icons/dica.svg"  id="myBtnDica">
+      
+      
+  <script src="buttons.js"></script>
+  <script src="fase4.js"></script>
+
+</body>
+</html>

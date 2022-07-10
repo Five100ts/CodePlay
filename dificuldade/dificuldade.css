@@ -1,0 +1,105 @@
+html, body{
+    height:100%;
+    width:100%;
+    background-color: #5522BD;
+    background: url(icons/fundo.svg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 100vw;
+ 
+    overflow: hidden;
+}
+
+#buttons{
+  position: fixed;
+  padding-bottom: 6.4vw;
+  color:none;
+  top:25.55%;
+}
+
+#btnLevelEasy{
+    position:fixed;
+    background-image: url("icons/cadeado.svg"); /*cadeado*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:  #0FBD8C;
+    background-size: 7.5vw 16.66vh;
+    box-shadow: 0px 2.5vh #159A75;
+    width: 14.75% ; /*tamanho fixo do botão*/
+    height: 32.78%;
+    left:13.5%;
+    top:25.55%;
+    border: none;
+    border-radius: 3vw; /*contorce as bordas do botão*/
+    cursor: pointer;
+  }
+
+  #btnLevelMedium{
+    position:fixed;
+    background-image: url("icons/cadeado.svg"); /*cadeado*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:  #FFAB19;
+    background-size: 7.5vw 16.66vh;
+    box-shadow: 0px 2.5vh #D18500;
+    width: 14.75% ; /*tamanho fixo do botão*/
+    height: 32.78%;
+    left:43.25%;
+    top:25.55%;
+    border: none;
+    border-radius: 3vw; /*contorce as bordas do botão*/
+    cursor: pointer;
+  }
+
+  #btnLevelHard{
+    position:fixed;
+    background-image: url("icons/cadeado.svg"); /*cadeado*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:  #FF0054;
+    background-size: 7.5vw 16.66vh;
+    box-shadow: 0px 2.5vh #CE0044;
+    width: 14.75% ; /*tamanho fixo do botão*/
+    height: 32.78%;
+    left:73%;
+    top:25.55%;
+    border: none;
+    border-radius: 3vw; /*contorce as bordas do botão*/
+    cursor: pointer;
+  }
+
+  #back{
+    position: fixed;
+  left: 3.85%;
+  bottom: 6.06%;
+  width:5%;
+  height:11.11%;
+  }
+
+  h2{
+    color: rgb(255, 255, 255);
+    font-family: "kanit";
+    
+  }
+
+  #textE{
+    position:fixed;
+    left: 16.12vw;
+    top:61.27vh;
+    font-size: 4.5vw;
+  }
+
+  #textM{
+    position:fixed;
+    left: 44.5vw;
+    top:61.27vh;
+    font-size: 4.5vw;
+}
+
+#textH{
+    position:fixed;
+    left: 74.5vw;
+    top:61.27vh;
+    font-size: 4.5vw; 
+}
+  

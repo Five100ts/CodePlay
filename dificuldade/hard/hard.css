@@ -1,0 +1,158 @@
+html, body{
+    height:100%;
+    width:100%;
+    background-color: #5522BD;
+    background: url(icons/fundo.svg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+     background-size: 100vw;
+    overflow: hidden;
+}
+
+#btnLevel1H{
+    position:fixed;
+    background-image: url("icons/cadeado.svg"); /*cadeado*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7.5vw 16.66vh;
+    background-color:  #FF0054;
+    box-shadow: 0px 2.5vh #CE0044;
+    width: 12.5% ; /*tamanho fixo do botão*/
+    height: 27.5%;
+    left:19.125%;
+    top:16.94%;
+    border: none;
+    border-radius: 3vw; /*contorce as bordas do botão*/
+    cursor: pointer;
+  }
+
+  #btnLevel2H{
+    position:fixed;
+    background-image: url("icons/cadeado.svg"); /*cadeado*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7.5vw 16.66vh;
+    background-color:  #FF0054;
+    box-shadow: 0px 2.5vh #CE0044;
+    width: 12.5% ; /*tamanho fixo do botão*/
+    height: 27.5%;
+    left:35.375%;
+    top:16.94%;
+    border: none;
+    border-radius: 3vw; /*contorce as bordas do botão*/
+    cursor: pointer;
+  }
+
+  #btnLevel3H{
+    position:fixed;
+    background-image: url("icons/cadeado.svg"); /*cadeado*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7.5vw 16.66vh;
+    background-color:  #FF0054;
+    box-shadow: 0px 2.5vh #CE0044;
+    width: 12.5% ; /*tamanho fixo do botão*/
+    height: 27.5%;
+    left:51.875%;
+    top:16.94%;
+    border: none;
+    border-radius: 3vw; /*contorce as bordas do botão*/
+    cursor: pointer;
+  }
+
+  #btnLevel4H{
+    position:fixed;
+    background-image: url("icons/cadeadoF.svg"); /*cadeado*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7.5vw 16.66vh;
+    background-color:  #CE0044;
+    box-shadow: 0px 2.5vh #8F002F;
+    width: 12.5% ; /*tamanho fixo do botão*/
+    height: 27.5%;
+    left:68.375%;
+    top:16.94%;
+    border: none;
+    border-radius: 3vw; /*contorce as bordas do botão*/
+    cursor: pointer;
+  }
+
+
+  #btnLevel5H{
+    position:fixed;
+    background-image: url("icons/cadeadoF.svg"); /*cadeado*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7.5vw 16.66vh;
+    background-color:  #CE0044;
+    box-shadow: 0px 2.5vh #8F002F;
+    width: 12.5% ; /*tamanho fixo do botão*/
+    height: 27.5%;
+    left:19.125%;
+    top:54.16%;
+    border: none;
+    border-radius: 3vw; /*contorce as bordas do botão*/
+    cursor: pointer;
+  }
+
+  #btnLevel6H{
+    position:fixed;
+    background-image: url("icons/cadeadoF.svg"); /*cadeado*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7.5vw 16.66vh;
+    background-color:  #CE0044;
+    box-shadow: 0px 2.5vh #8F002F;
+    width: 12.5% ; /*tamanho fixo do botão*/
+    height: 27.5%;
+    left:35.375%;
+    top:54.16%;
+    border: none;
+    border-radius: 3vw; /*contorce as bordas do botão*/
+    cursor: pointer;
+  }
+
+  #btnLevel7H{
+    position:fixed;
+    background-image: url("icons/cadeadoF.svg"); /*cadeado*/
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-size: 7.5vw 16.66vh;
+    background-color:  #CE0044;
+    box-shadow: 0px 2.5vh #8F002F;
+    width: 12.5% ; /*tamanho fixo do botão*/
+    height: 27.5%;
+    left:51.875%;
+    top:54.16%;
+    border: none;
+    border-radius: 3vw; /*contorce as bordas do botão*/
+    cursor: pointer;
+  }
+
+  #btnLevel8H{
+    position:fixed;
+    background-image: url("icons/cadeadoF.svg"); /*cadeado*/
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-size: 7.5vw 16.66vh;
+    background-color:  #CE0044;
+    box-shadow: 0px 2.5vh #8F002F;
+    width: 12.5% ; /*tamanho fixo do botão*/
+    height: 27.5%;
+    left:68.375%;
+    top:54.16%;
+    border: none;
+    border-radius: 3vw; /*contorce as bordas do botão*/
+    cursor: pointer;
+  }
+
+  #back5{
+    position: fixed;
+  left: 3.85%;
+  bottom: 6.06%;
+  width:5%;
+  height:11.11%;
+  }
+  
