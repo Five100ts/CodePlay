@@ -88,143 +88,133 @@ let easing=0.5;
 let eas=2;
 
  //Mapa formado por uma matriz
-let map = [
+ let map = [
 
-['1', '1', '1', '1', '1', '1', '1', '1'],
-['1', ' ', ' ', ' ', ' ', ' ', ' ', '1'],
-['1', ' ', ' ', ' ', ' ', ' ', ' ', '1'],
-['1', ' ', '2', ' ', ' ', ' ', ' ', '1'],
-['1', ' ', ' ', ' ', ' ', ' ', ' ', '1'],
-['1', ' ', ' ', ' ', ' ', '3', ' ', '1'],
-['1', ' ', ' ', '2', ' ', ' ', ' ', '1'],
-['1', '1', '1', '1', '1', '1', '1', '1'],
-]
-
-function setup() {
-     //Canvas da para desenhar o mapa e o vetor
-    let cnv = createCanvas(500, 320);
-    cnv.style('display', 'block');
-    canvas.id = "can";
-    colorMode(HSB, 360, 100, 100);
-
-    //valor das coordenadas do jogador
-    m=3;
-    n=3;
+  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
+  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
+  ['1', '1', '0', '0', '0', '0', '0','1', '1'],
+  ['1', '1', '0', '1', '1', '3', '0','1', '1'],
+  ['1', '1', '0', '0', '0', '0', '0','1', '1'],
+  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
+  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
+  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
+  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
+  ]
+  
+  
+  
+  function setup() {
+  
+      createCanvas(480, 200);
+      colorMode(HSB, 360, 100, 100);
+      canvas.id = 'canvas';
+      //valor das coordenadas do jogador
+      m=3;
+      n=3;
+      
+    }
     
+    function draw() {
+      background(255)
+      mapa();
+      player();
+      objetivo();
+      vetor();
+      noStroke();
+      fill(260,82,74);
+      rect(width*0.4541,0,width*0.0625,height*1.1);
+      
+    }
+  function windowResized(){
+    resizeCanvas(windowWidth*0.625, windowHeight*0.66);
   }
   
-   //Função para desenhar tudo
-  function draw() {
-    background(220);
-    mapa();
-    player();
-    objetivo();
-    vetor();
-    
-    //teste
-    if(iniciar == false){
-      temp = 0;
-    }
-
-    if(iniciar == true){
-      temp++;
-    }
-    console.log(temp);
-    // frameRate(0.5);
-    
-  }
-
-   //Função para responsividade
-function windowResized(){
-	resizeCanvas(windowWidth*0.625, windowHeight*0.66);
-}
-
- //Função para desenhar o vetor e os blocos
-function vetor(){
-  for(let i = 0;i<comandos.length;i++){
-    if(comandos[i] == 'up'){
-      let x = 400;
-      let y = i*40;
-           fill(38,90,100);
-           rect(x,280-y,40,40);
-    }
-
-    if(comandos[i] == 'right'){
-      let x = 400;
-      let y = i*40;
-           fill(163,92,74);
-           rect(x,280-y,40,40);
-    }
-
-    if(comandos[i] == 'down'){
-      let x = 400;
-      let y = i*40;
-           fill(260,82,74);
-           rect(x,280-y,40,40);
-    }
-
-    if(comandos[i] == 'left'){
-      let x = 400;
-      let y = i*40;
-           fill(340,100,100);
-           rect(x,280-y,40,40);
+  function vetor(){
+    for(let i = 0;i<comandos.length;i++){
+      if(comandos[i] == 'up'){
+        let x = width*0.515;
+        let y = i*height*0.11;
+             fill(38,90,100);
+             rect(x,height*0.886-y,width*0.05,height*0.11);
+      }
+  
+      if(comandos[i] == 'right'){
+        let x = width*0.515;
+        let y = i*height*0.11;
+             fill(163,92,74);
+             rect(x,height*0.886-y,width*0.05,height*0.11);    }
+  
+      if(comandos[i] == 'down'){
+        let x = width*0.515;
+        let y = i*height*0.11;
+             fill(260,82,74);
+             rect(x,height*0.886-y,width*0.027,height*0.11);    }
+  
+      if(comandos[i] == 'left'){
+        let x = width*0.515;
+        let y = i*height*0.11;
+             fill(340,100,100);
+             rect(x,height*0.886-y,width*0.027,height*0.11);    }
     }
   }
-}
-  //Função para desenhar o mapa
-  function mapa() {
-    for(let i = 0; i<map.length;i++){
-        for(let j = 0;j<map[0].length;j++){
-        
-          if(map[i][j] ==' '){
-            let x = j*40;
-            let y = i*40;
-            fill(200, 150, 150);
-            rect(x,y,40,40); 
-            
-         }
-        
-          if(map[i][j] =='1'){
-           let x = j*width*0.05;
-           let y = i*height*0.11;
-           fill(255);
-           rect(x,y,width*0.05,height*0.11); 
-           
-        }
-
-        if(map[i][j] =='2'){
-            let x = j*40;
-            let y = i*40;
-            fill(50);
-            rect(x,y,40,40); 
-            
-         }
-
-        }
-    }
+  
+  function preload(){
+  chao = loadImage("sprits/chão.svg")
+  parede = loadImage("sprits/parede.svg")
+  
   }
-
-//Função para desenhar o jogador
-  function player(){
-    
-    fill(50,100,100);
-    let playe = ellipse(m*40+20, n*40+20, 40, 40);
-    ellipse.id = "jogador";
-  }
-
-//Função para desenhar o objetivo final
-  function objetivo(){
-    for(let i = 0; i<map.length;i++){
-        for(let j = 0;j<map[0].length;j++){
-        if(map[i][j] =='3'){
-            let x = j*40+20;
-            let y = i*40+20;
-            fill(200,50,100); 
-            ellipse(x, y, 20, 20);
-        }
+  
+    function mapa() {
+      for(let i = 0; i<map.length;i++){
+          for(let j = 0;j<map[0].length;j++){
+          
+            if(map[i][j] =='0'){
+              let x = j*width*0.05;
+              let y = i*height*0.11;
+              
+              image(parede,x-width*0.025,y-height*0.05,width*0.1,height*0.22); 
+              
+           }
+          
+            if(map[i][j] =='1'){
+             let x = j*width*0.05;
+             let y = i*height*0.11;
+             fill(255);
+             image(chao,x-width*0.025,y-height*0.05,width*0.1,height*0.22); 
+             
+          }
+  
+          if(map[i][j] =='2'){
+              let x = j*width*0.05;
+              let y = i*height*0.11;
+              fill(50);
+              rect(x,y,width*0.05,height*0.11); 
+              
+           }
+  
+          }
+      }
     }
+  
+    function player(){
+      
+      fill(50,100,100);
+      let playe = ellipse(m*width*0.05+width*0.025, n*height*0.11+height*0.055, width*0.05, height*0.11);
+      playe.id = "jogador";
     }
-  }
+  
+    function objetivo(){
+      for(let i = 0; i<map.length;i++){
+          for(let j = 0;j<map[0].length;j++){
+          if(map[i][j] =='3'){
+              let x = j*width*0.05+width*0.025;
+              let y = i*height*0.11+height*0.055;
+              fill(200,50,100); 
+              ellipse(x, y, width*0.025, height*0.055);
+          }
+      }
+      }
+    }
 
   
 

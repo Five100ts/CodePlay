@@ -70,9 +70,8 @@ window.onclick = function(event) {
   
 }
 
-//Tirar os elementos da tela quando a tela de vitoria ou derrota aparecer
 
-document.getElementById("demo").innerHTML = 0;
+
 
 function execute(){
   if(comandos.length>0){
@@ -87,7 +86,7 @@ document.getElementById("menuE").style.display = "none";
 document.getElementById("resetG").style.display = "none";
 document.getElementById("confirm").style.display = "none";
 document.getElementById("myBtnDica").style.display = "none";
-document.getElementById("can").style.display = "none";
+document.getElementById("canvas").style.display = "none";
 document.getElementById("painel").style.display = "none";
   }
 
@@ -100,7 +99,7 @@ document.getElementById("menuE").style.display = "none";
 document.getElementById("resetG").style.display = "none";
 document.getElementById("confirm").style.display = "none";
 document.getElementById("myBtnDica").style.display = "none";
-document.getElementById("can").style.display = "none";
+document.getElementById("canvas").style.display = "none";
 document.getElementById("painel").style.display = "none";
 
   }
