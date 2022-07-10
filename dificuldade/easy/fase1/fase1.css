@@ -618,13 +618,7 @@ color: #FFFFFF;
   }
  
 
-  canvas{
-    position: fixed;
-    margin-left:13vw;
-    margin-top: 12vh;
-    width:58vw;
-    height:53vh;
-  }
+  
 
  
   #canvas2{
@@ -689,7 +683,7 @@ color: #FFFFFF;
   }
 
   #esquerda{
-    position: fixed;
+    position:relative;
     background-color: #FF0054;
     color: #FFFFFF;
     font-family: "Orbitron";
@@ -701,9 +695,9 @@ color: #FFFFFF;
     font-size: 1.5vw;
     border-radius: 7px;
     width:6.375vw;
-    height: 5.72%;
-    left: 29vw;
-    top: 10.66vh;
+    height: 50.72%;
+    left: 25vw;
+    top: 2.66vh;
     border: none;
     cursor: pointer;
   }
@@ -731,5 +725,14 @@ color: #FFFFFF;
 
   #jogador{
    color: #5522BD;
-   left: 49vw;
+   left: 2vw;
   }
+
+ #can{
+  
+  position: fixed;
+  margin-left:13vw;
+  margin-top: 12vh;
+  width:65vw;
+  height:53vh;
+}

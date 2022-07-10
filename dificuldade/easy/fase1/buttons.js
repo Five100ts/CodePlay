@@ -74,41 +74,36 @@ window.onclick = function(event) {
 
 document.getElementById("demo").innerHTML = 0;
 
-function randomN(){
-document.getElementById("demo").innerHTML =
-Math.floor(Math.random() * 10);
-
-if(document.getElementById("demo").innerHTML <=5){
-document.getElementById("conteudoModalDefeat").style.display = "block";
-document.body.style.color = "#451C99";
-document.getElementById("menuE").style.display = "none";
-document.getElementById("resetG").style.display = "none";
-document.getElementById("confirm").style.display = "none";
-document.getElementById("myBtnDica").style.display = "none";
-
-
+function execute(){
+  if(comandos.length>0){
+  exec();
+  }
 }
 
-if(document.getElementById("demo").innerHTML >5){
+function vitory(){
 document.getElementById("conteudoModalVitory").style.display = "block";
 document.body.style.color = "#451C99";
 document.getElementById("menuE").style.display = "none";
 document.getElementById("resetG").style.display = "none";
 document.getElementById("confirm").style.display = "none";
 document.getElementById("myBtnDica").style.display = "none";
+document.getElementById("can").style.display = "none";
+document.getElementById("painel").style.display = "none";
+  }
 
-}
-}
 
-function vitory(){
-  document.getElementById("conteudoModalVitory").style.display = "block";
+  function fail(){
+
+document.getElementById("conteudoModalDefeat").style.display = "block";
 document.body.style.color = "#451C99";
 document.getElementById("menuE").style.display = "none";
 document.getElementById("resetG").style.display = "none";
 document.getElementById("confirm").style.display = "none";
 document.getElementById("myBtnDica").style.display = "none";
-  }
+document.getElementById("can").style.display = "none";
+document.getElementById("painel").style.display = "none";
 
+  }
 function back1(){
 window.location.href='../../../inicio.html';
 }
