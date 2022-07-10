@@ -1,7 +1,12 @@
 //MENU
+var audio = new Audio('./b1.mp3');
+var audio2 = new Audio('./b2.mp3');
+var audio3 = new Audio('./vic.mp3');
+var audio4 = new Audio('./lose.mp3');
 
 /* A barra de navegação ocupa 25% da tela */
 function openNav() {
+  audio.play();
     document.getElementById("mySidenav").style.width = "25%";
     document.body.style.backgroundColor = "#451C99";
     /*document.getElementById("myModalDica").style.backgroundColor = "#451C99";*/
@@ -9,11 +14,13 @@ function openNav() {
   
   /* A barra de navegação ocupa 0% da tela */
   function closeNav() {
+    audio2.play();
     document.getElementById("mySidenav").style.width = "0%";
     document.body.style.backgroundColor = "#5522BD";
   }
 
   function confi(){
+    audio.play();
     document.getElementById("conteudoModalConfig").style.display = "block";
     document.body.style.backgroundColor = "#451C99";
     document.getElementById("menuE").style.display = "none";
@@ -24,6 +31,7 @@ function openNav() {
   }
   
   function closeConfi(){
+    audio2.play();
     document.getElementById("conteudoModalConfig").style.display = "none";
     document.body.style.backgroundColor = "#5522BD";
     document.getElementById("menuE").style.display = "block";
@@ -33,6 +41,7 @@ function openNav() {
   }
   
   function exit(){
+    audio2.play();
     window.location.href='../easy.html';
   }
 
@@ -53,11 +62,13 @@ var spanDica = document.getElementsByClassName("closeDica")[0];
 
 // Quando o usuário clicar no botão, abra o modal 
 btnDica.onclick = function() {
+  audio.play();
   modalDica.style.display = "block";
 }
 
 // Quando o usuário clicar no X, feche o modal
 spanDica.onclick = function() {
+  audio2.play();
   modalDica.style.display = "none";
 }
 
@@ -65,6 +76,7 @@ spanDica.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modalDica) {
     modalDica.style.display = "none";
+    audio2.play();
   }
 
   
@@ -85,6 +97,7 @@ document.getElementById("menuE").style.display = "none";
 document.getElementById("resetG").style.display = "none";
 document.getElementById("confirm").style.display = "none";
 document.getElementById("myBtnDica").style.display = "none";
+audio4.play();
 
 
 }
@@ -96,19 +109,23 @@ document.getElementById("menuE").style.display = "none";
 document.getElementById("resetG").style.display = "none";
 document.getElementById("confirm").style.display = "none";
 document.getElementById("myBtnDica").style.display = "none";
+audio3.play();
 
 }
 }
 
 function back1(){
+  audio2.play();
 window.location.href='../../../inicio.html';
 }
 
 function reset(){
+  audio2.play();
 window.location.href='fase8.html';
 }
 
 function next(){
+  audio.play();
 window.location.href='../fase9/fase9.html';
 }
 

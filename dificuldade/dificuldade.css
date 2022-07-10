@@ -34,6 +34,8 @@ html, body{
     cursor: pointer;
   }
 
+  
+
   #btnLevelMedium{
     position:fixed;
     background-image: url("icons/cadeado.svg"); /*cadeado*/
