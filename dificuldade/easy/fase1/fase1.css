@@ -618,38 +618,28 @@ color: #FFFFFF;
   }
  
 
-  canvas{
+  #canvas{
     position: fixed;
     margin-left:13vw;
-    margin-top: 12vh;
-    width:58vw;
-    height:53vh;
+    margin-top: -5vh;
+    
   }
 
  
-  #canvas2{
-    position: fixed;
-    margin-left:57vw;
-    margin-top: 30vh;
-  }
-  #canvas3{
-    position: fixed;
-    margin-left:30vw;
-    margin-top: 14vh;
-
-  }
 
 #painel{
   width:58vw;
   height:10%;
+  margin-top: 65vh;
+
   background-color:white;
   display:block;
-  position:absolute;
+  position:fixed;
   margin-left:13vw;
 }
 
   #direita{
-    position: fixed;
+    position: relative;
     background-color: #0FBD8C;
     color: #FFFFFF;
     font-family: "Orbitron";
@@ -657,19 +647,19 @@ color: #FFFFFF;
     line-height: 5vh;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
     font-size: 1.5vw;
     border-radius: 7px;
     width:6.375vw;
-    height: 5.72%;
-     left: 39vw;
-    top: 10.66vh; 
+    height: 50.72%;
+     left: 20vw;
+    top: -2.56vh; 
     border: none;
     cursor: pointer;
   }
 
   #cima{
-    position: fixed;
+    position: relative;
     background-color: #FFAB19;
     color: #FFFFFF;
     font-family: "Orbitron";
@@ -681,15 +671,15 @@ color: #FFFFFF;
     font-size: 1.5vw;
     border-radius: 7px;
     width:6.375vw;
-    height: 5.72%;
-    left: 19vw;
-    top: 10.66vh;
+    height: 50.72%;
+    left: 10vw;
+    top: 2.66vh;
     border: none;
     cursor: pointer;
   }
 
   #esquerda{
-    position: fixed;
+    position: relative;
     background-color: #FF0054;
     color: #FFFFFF;
     font-family: "Orbitron";
@@ -701,16 +691,16 @@ color: #FFFFFF;
     font-size: 1.5vw;
     border-radius: 7px;
     width:6.375vw;
-    height: 5.72%;
-    left: 29vw;
-    top: 10.66vh;
+    height: 50.72%;
+    left: 1vw;
+    top: -12.66vh;
     border: none;
     cursor: pointer;
   }
   
 
   #baixo{
-    position: fixed;
+    position: relative;
     background-color: #5522BD;
     color: #FFFFFF;
     font-family: "Orbitron";
@@ -722,12 +712,14 @@ color: #FFFFFF;
     font-size: 1.5vw;
     border-radius: 7px;
     width:6.375vw;
-    height: 5.72%;
-    left: 49vw;
-    top: 10.66vh;
+    height: 50.72%;
+    left: -9vw;
+    top: -7.66vh;
     border: none;
     cursor: pointer;
   }
+
+  
 
   #jogador{
    color: #5522BD;

@@ -101,7 +101,7 @@ document.getElementById("myBtnDica").style.display = "none";
 }
 
 function vitory(){
-  document.getElementById("conteudoModalVitory").style.display = "block";
+document.getElementById("conteudoModalVitory").style.display = "block";
 document.body.style.color = "#451C99";
 document.getElementById("menuE").style.display = "none";
 document.getElementById("resetG").style.display = "none";

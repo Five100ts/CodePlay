@@ -54,16 +54,16 @@ function createPanel(){
 		painel.appendChild(button[cont]);
 	}
 
-  if(cont==4){
-    button[cont] = document.createElement("button");
-		button[cont].innerHTML="Exec";
+  // if(cont==4){
+  //   button[cont] = document.createElement("button");
+	// 	button[cont].innerHTML="Exec";
 
-    button[cont].onclick = function(){
-     exec()
-    }
+  //   button[cont].onclick = function(){
+  //    exec()
+  //   }
         
-		painel.appendChild(button[cont]);
-	}
+	// 	painel.appendChild(button[cont]);
+	// }
 
   }
 }
@@ -79,24 +79,29 @@ function createPanel(){
 //variaveis das coordenadas do jogador
 let m, n;
 let comandos = [];
-
+let chao;
 let primeiro = comandos[0];
 
 let map = [
 
-['1', '1', '1', '1', '1', '1', '1', '1'],
-['1', ' ', ' ', ' ', ' ', ' ', ' ', '1'],
-['1', ' ', ' ', ' ', ' ', ' ', ' ', '1'],
-['1', ' ', '2', ' ', ' ', ' ', ' ', '1'],
-['1', ' ', ' ', ' ', ' ', ' ', ' ', '1'],
-['1', ' ', ' ', ' ', ' ', '3', ' ', '1'],
-['1', ' ', ' ', '2', ' ', ' ', ' ', '1'],
-['1', '1', '1', '1', '1', '1', '1', '1'],
+['1', '1', '1', '1', '1', '1', '1','1', '1'],
+['1', '1', '1', '1', '1', '1', '1','1', '1'],
+['1', '1', '0', '0', '0', '0', '0','1', '1'],
+['1', '1', '0', '1', '1', '3', '0','1', '1'],
+['1', '1', '0', '0', '0', '0', '0','1', '1'],
+['1', '1', '1', '1', '1', '1', '1','1', '1'],
+['1', '1', '1', '1', '1', '1', '1','1', '1'],
+['1', '1', '1', '1', '1', '1', '1','1', '1'],
+['1', '1', '1', '1', '1', '1', '1','1', '1'],
 ]
 
+
+
 function setup() {
-    createCanvas(500, 320);
+
+    createCanvas(480, 200);
     colorMode(HSB, 360, 100, 100);
+    canvas.id = 'canvas';
     //valor das coordenadas do jogador
     m=3;
     n=3;
@@ -104,74 +109,80 @@ function setup() {
   }
   
   function draw() {
-    background(220);
+    background(255)
     mapa();
     player();
     objetivo();
     vetor();
+    noStroke();
+    fill(260,82,74);
+    rect(width*0.4541,0,width*0.0625,height*1.1);
     
   }
 function windowResized(){
-	resizeCanvas(windowWidth*0.625, 320);
+	resizeCanvas(windowWidth*0.625, windowHeight*0.66);
 }
 
 function vetor(){
   for(let i = 0;i<comandos.length;i++){
     if(comandos[i] == 'up'){
-      let x = 400;
-      let y = i*40;
+      let x = width*0.515;
+      let y = i*height*0.11;
            fill(38,90,100);
-           rect(x,280-y,40,40);
+           rect(x,height*0.886-y,width*0.05,height*0.11);
     }
 
     if(comandos[i] == 'right'){
-      let x = 400;
-      let y = i*40;
+      let x = width*0.515;
+      let y = i*height*0.11;
            fill(163,92,74);
-           rect(x,280-y,40,40);
-    }
+           rect(x,height*0.886-y,width*0.05,height*0.11);    }
 
     if(comandos[i] == 'down'){
-      let x = 400;
-      let y = i*40;
+      let x = width*0.515;
+      let y = i*height*0.11;
            fill(260,82,74);
-           rect(x,280-y,40,40);
-    }
+           rect(x,height*0.886-y,width*0.027,height*0.11);    }
 
     if(comandos[i] == 'left'){
-      let x = 400;
-      let y = i*40;
+      let x = width*0.515;
+      let y = i*height*0.11;
            fill(340,100,100);
-           rect(x,280-y,40,40);
-    }
+           rect(x,height*0.886-y,width*0.027,height*0.11);    }
   }
+}
+
+function preload(){
+chao = loadImage("sprits/chão.svg")
+parede = loadImage("sprits/parede.svg")
+
 }
 
   function mapa() {
     for(let i = 0; i<map.length;i++){
         for(let j = 0;j<map[0].length;j++){
         
-          if(map[i][j] ==' '){
-            let x = j*40;
-            let y = i*40;
-            fill(200, 150, 150);
-            rect(x,y,40,40); 
+          if(map[i][j] =='0'){
+            let x = j*width*0.05;
+            let y = i*height*0.11;
+            
+            image(parede,x-width*0.025,y-height*0.05,width*0.1,height*0.22); 
             
          }
         
           if(map[i][j] =='1'){
-           let x = j*40;
-           let y = i*40;
+           let x = j*width*0.05;
+           let y = i*height*0.11;
            fill(255);
-           rect(x,y,40,40); 
+           image(chao,x-width*0.025,y-height*0.05,width*0.1,height*0.22); 
            
         }
 
         if(map[i][j] =='2'){
-            let x = j*40;
-            let y = i*40;
+            let x = j*width*0.05;
+            let y = i*height*0.11;
             fill(50);
-            rect(x,y,40,40); 
+            rect(x,y,width*0.05,height*0.11); 
             
          }
 
@@ -182,7 +193,7 @@ function vetor(){
   function player(){
     
     fill(50,100,100);
-    let playe = rect(m*40, n*40, 40, 40);
+    let playe = ellipse(m*width*0.05+width*0.025, n*height*0.11+height*0.055, width*0.05, height*0.11);
     playe.id = "jogador";
   }
 
@@ -190,10 +201,10 @@ function vetor(){
     for(let i = 0; i<map.length;i++){
         for(let j = 0;j<map[0].length;j++){
         if(map[i][j] =='3'){
-            let x = j*40+20;
-            let y = i*40+20;
+            let x = j*width*0.05+width*0.025;
+            let y = i*height*0.11+height*0.055;
             fill(200,50,100); 
-            ellipse(x, y, 20, 20);
+            ellipse(x, y, width*0.025, height*0.055);
         }
     }
     }
@@ -205,71 +216,25 @@ function vetor(){
     function esquerda(){
       comandos.push('left');
       console.log(comandos);
-      // if(m>1){
-      //  m--;
-       
-      // } 
-      // if(map[n][m]=='2')
-      // {
-      //  m++;
-      // }
-
-      // if(map[n][m]=='3')
-      // {
-      //  map[n][m]='-';
-      // }
+     
   }
 
   function direita(){
     comandos.push('right');
     console.log(comandos);
-    // if(m<6){
-    //   m++;
-    //  } 
-
-    //  if(map[n][m]=='2')
-    // {
-    //  m--;
-    // }
-
-    // if(map[n][m]=='3')
-    // {
-    //  map[n][m]='-';
-    // }
+    
 }
 
 function cima(){
   comandos.push('up');
   console.log(comandos);
-  // if(n>1){
-  //   n--;
-  //  } 
-  //  if(map[n][m]=='2')
-  // {
-  //  n++;
-  // }
-
-  // if(map[n][m]=='3')
-  // {
-  //  map[n][m]='-';
-  // }
+  
 }
 
 function baixo(){
   comandos.push('down');
   console.log(comandos);
-  // if(n<6){
-  //   n++;
-  //  } 
-  //  if(map[n][m]=='2')
-  // {
-  //  n--;
-  // }
 
-  // if(map[n][m]=='3')
-  // {
-  //  map[n][m]='-';
-  // }
 }
  
 
@@ -290,6 +255,7 @@ if(comandos[0] == 'down'){
   if(map[n][m]=='3')
   {
    map[n][m]='-';
+   
    
   }
 }
