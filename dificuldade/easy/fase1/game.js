@@ -90,77 +90,79 @@ let eas=2;
  //Mapa formado por uma matriz
  let map = [
 
-  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
-  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
-  ['1', '1', '0', '0', '0', '0', '0','1', '1'],
-  ['1', '1', '0', '1', '1', '3', '0','1', '1'],
-  ['1', '1', '0', '0', '0', '0', '0','1', '1'],
-  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
-  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
-  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
-  ['1', '1', '1', '1', '1', '1', '1','1', '1'],
+  ['0', '0', '0', '0', '0', '0', '0','0', '0','0', '0','0', '0', '0'],
+  ['0', '1', '1', '1', '1', '1', '1','1', '1','1', '1','1', '1', '0'],
+  ['0', '1', '1', '1', '1', '1', '1','1', '1','1', '1','1', '1', '0'],
+  ['0', '1', '1', '1', '0', '0', '0','0', '0','1', '1','1', '1', '0'],
+  ['0', '1', '1', '1', '0', '4', '4','3', '0','1', '1','1', '1', '0'],
+  ['0', '1', '1', '1', '0', '0', '0','0', '0','1', '1','1', '1', '0'],
+  ['0', '1', '1', '1', '1', '1', '1','1', '1','1', '1','1', '1', '0'],
+  ['0', '1', '1', '1', '1', '1', '1','1', '1','1', '1','1', '1', '0'],
+  ['0', '0', '0', '0', '0', '0', '0','0', '0','0', '0','0', '0', '0'],
   ]
   
   
   
   function setup() {
   
-      createCanvas(480, 200);
+      createCanvas(600, 210);
       colorMode(HSB, 360, 100, 100);
       canvas.id = 'canvas';
       //valor das coordenadas do jogador
-      m=3;
-      n=3;
-      
+      m=5;
+      n=4;
+     
     }
     
     function draw() {
       background(255)
       mapa();
-      player();
       objetivo();
       vetor();
+      player();
       noStroke();
       fill(260,82,74);
-      rect(width*0.4541,0,width*0.0625,height*1.1);
+      rect(width*0.70,0,width*0.04,height*1.1);
       
+      // console.log(m,n, obj);
     }
   function windowResized(){
-    resizeCanvas(windowWidth*0.625, windowHeight*0.66);
+    resizeCanvas(windowWidth*0.8, windowHeight*0.54);
   }
   
   function vetor(){
     for(let i = 0;i<comandos.length;i++){
       if(comandos[i] == 'up'){
-        let x = width*0.515;
+        let x = width*0.815;
         let y = i*height*0.11;
              fill(38,90,100);
-             rect(x,height*0.886-y,width*0.05,height*0.11);
+             rect(x,height*0.886-y,width*0.11,height*0.13);
       }
   
       if(comandos[i] == 'right'){
-        let x = width*0.515;
+        let x = width*0.815;
         let y = i*height*0.11;
              fill(163,92,74);
-             rect(x,height*0.886-y,width*0.05,height*0.11);    }
+             rect(x,height*0.886-y,width*0.11,height*0.13);    }
   
       if(comandos[i] == 'down'){
-        let x = width*0.515;
+        let x = width*0.815;
         let y = i*height*0.11;
              fill(260,82,74);
-             rect(x,height*0.886-y,width*0.027,height*0.11);    }
+             rect(x,height*0.886-y,width*0.11,height*0.13);    }
   
       if(comandos[i] == 'left'){
-        let x = width*0.515;
+        let x = width*0.815;
         let y = i*height*0.11;
              fill(340,100,100);
-             rect(x,height*0.886-y,width*0.027,height*0.11);    }
+             rect(x,height*0.886-y,width*0.11,height*0.13);    }
     }
   }
   
   function preload(){
-  chao = loadImage("sprits/chão.svg")
-  parede = loadImage("sprits/parede.svg")
+  robo = loadImage("sprits/robo.svg")
+  bateria = loadImage("sprits/bateria.svg")
+  
   
   }
   
@@ -171,16 +173,16 @@ let eas=2;
             if(map[i][j] =='0'){
               let x = j*width*0.05;
               let y = i*height*0.11;
-              
-              image(parede,x-width*0.025,y-height*0.05,width*0.1,height*0.22); 
+              fill(200,100,100)
+              rect(x,y,width*0.05,height*0.12); 
               
            }
           
             if(map[i][j] =='1'){
              let x = j*width*0.05;
              let y = i*height*0.11;
-             fill(255);
-             image(chao,x-width*0.025,y-height*0.05,width*0.1,height*0.22); 
+             fill(150,100,100);
+             rect(x,y,width*0.05,height*0.12); 
              
           }
   
@@ -188,9 +190,17 @@ let eas=2;
               let x = j*width*0.05;
               let y = i*height*0.11;
               fill(50);
-              rect(x,y,width*0.05,height*0.11); 
+              rect(x,y,width*0.05,height*0.12); 
               
            }
+
+           if(map[i][j] =='4'){
+            let x = j*width*0.05;
+            let y = i*height*0.11;
+            fill(300,100,100);
+            rect(x,y,width*0.05,height*0.12); 
+            
+         }
   
           }
       }
@@ -199,18 +209,20 @@ let eas=2;
     function player(){
       
       fill(50,100,100);
-      let playe = ellipse(m*width*0.05+width*0.025, n*height*0.11+height*0.055, width*0.05, height*0.11);
-      playe.id = "jogador";
+      image(robo,m*width*0.048, n*height*0.09, width*0.07, height*0.19);
+      
     }
   
     function objetivo(){
       for(let i = 0; i<map.length;i++){
           for(let j = 0;j<map[0].length;j++){
           if(map[i][j] =='3'){
-              let x = j*width*0.05+width*0.025;
-              let y = i*height*0.11+height*0.055;
-              fill(200,50,100); 
-              ellipse(x, y, width*0.025, height*0.055);
+              let x = j*width*0.05+width*0.0125;
+              let y = i*height*0.11+height*0.0225;
+              fill(45,60,100); 
+              rect(j*width*0.05,i*height*0.11,width*0.05,height*0.11);
+    
+              image(bateria, x, y, width*0.024, height*0.07);
           }
       }
       }
@@ -246,7 +258,7 @@ function exec(){
    do{
         
         if(comandos[0] == 'down'){
-          if(n<6){
+          if(n<12){
           n++;
           
                   } 
@@ -257,7 +269,7 @@ function exec(){
 
   if(map[n][m]=='3')
   {
-   map[n][m]='-';
+   map[n][m]='1';
    
    obj = true;
    
@@ -278,7 +290,7 @@ if(comandos[0] == 'up'){
 
   if(map[n][m]=='3')
   {
-   map[n][m]='-';
+   map[n][m]='1';
    obj = true;
   }
   tira();
@@ -286,7 +298,7 @@ if(comandos[0] == 'up'){
 
 if(comandos[0] =='right'){
   
-  if(m<6){
+  if(m<12){
     m++;
     
    } 
@@ -298,7 +310,7 @@ if(comandos[0] =='right'){
 
   if(map[n][m]=='3')
   {
-   map[n][m]='-';
+   map[n][m]='1';
    obj = true;
   }
   tira();
@@ -316,7 +328,7 @@ if(comandos[0] == 'left'){
 
    if(map[n][m]=='3')
    {
-    map[n][m]='-';
+    map[n][m]='1';
     obj = true;
    }
    tira();

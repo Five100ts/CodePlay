@@ -622,22 +622,23 @@ color: #FFFFFF;
 
   #canvas{
     position: fixed;
-    margin-left:13vw;
-    margin-top: -5vh;
+    margin-left:9vw;
+    margin-top: 5.8vh;
     
   }
 
  
 
 #painel{
-  width:58vw;
-  height:10%;
-  margin-top: 65vh;
-
+  width:80vw;
+  height:13.8vh;
+  margin-top: 64.1vh;
+  margin-left:9vw;
   background-color:white;
   display:block;
   position:fixed;
-  margin-left:13vw;
+  border-radius: 15px;
+  
 }
 
   #direita{
@@ -655,7 +656,7 @@ color: #FFFFFF;
     width:6.375vw;
     height: 50.72%;
      left: 20vw;
-    top: -2.56vh; 
+    top: 2.66vh; 
     border: none;
     cursor: pointer;
   }
