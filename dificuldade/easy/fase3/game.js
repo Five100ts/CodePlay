@@ -14,7 +14,7 @@ function createPanel()
       button[cont].id = "cima";
       button[cont].onclick = function()
       {
-        if(iniciar==false && 2>=comandos.length)
+        if(iniciar==false && 4>=comandos.length)
         {
         cima()
         }
@@ -29,7 +29,7 @@ function createPanel()
       button[cont].id = "direita";
       button[cont].onclick = function()
       {
-        if(iniciar==false && 2>=comandos.length)
+        if(iniciar==false && 4>=comandos.length)
         {
         direita()
         }
@@ -44,7 +44,7 @@ function createPanel()
       button[cont].id = "baixo";
       button[cont].onclick = function()
       {
-        if(iniciar==false && 2>=comandos.length)
+        if(iniciar==false && 4>=comandos.length)
         {
         baixo()
         }
@@ -59,7 +59,7 @@ function createPanel()
       button[cont].id = "esquerda";
       button[cont].onclick = function()
       {
-        if(iniciar==false && 2>=comandos.length)
+        if(iniciar==false && 4>=comandos.length)
         {
         esquerda()
         }
@@ -89,14 +89,15 @@ let resu;
  let map = [
 
   ['0', '0', '0', '0', '0', '0', '0','0', '0','0', '0','0', '0', '0'],
-  ['0', '-', '-', '-', '-', '-', '-','-', '-','-', '-','-', '-', '0'],
-  ['0', '-', '-', '-', '-', '-', '0','0', '0','-', '-','-', '-', '0'],
-  ['0', '-', '-', '-', '0', '0', '0','3', '0','-', '-','-', '-', '0'],
+  ['0', '-', '-', '-', '-', '-', '0','0', '0','0', '-','-', '-', '0'],
+  ['0', '-', '-', '-', '-', '-', '0','4', '3','0', '-','-', '-', '0'],
+  ['0', '-', '-', '-', '0', '0', '0','4', '0','0', '-','-', '-', '0'],
   ['0', '-', '-', '-', '0', '4', '4','4', '0','-', '-','-', '-', '0'],
   ['0', '-', '-', '-', '0', '0', '0','0', '0','-', '-','-', '-', '0'],
   ['0', '-', '-', '-', '-', '-', '-','-', '-','-', '-','-', '-', '0'],
   ['0', '-', '-', '-', '-', '-', '-','-', '-','-', '-','-', '-', '0'],
   ['0', '0', '0', '0', '0', '0', '0','0', '0','0', '0','0', '0', '0'],
+
   ]
   
   function setup() 
@@ -248,37 +249,37 @@ let resu;
         if(comandos[i] == 'up')
         {
           let x = width*0.804;
-          let y = i*height*0.2;
+          let y = i*height*0.18;
           fill(38,90,100);
-          rect(x,height*0.8-y,width*0.135,height*0.17,height*0.035); 
-          image(seta_cima,x+width*0.05,height*0.83-y,width*0.04,height*0.1);
+          rect(x,height*0.84-y,width*0.135,height*0.15,height*0.035); 
+          image(seta_cima,x+width*0.05,height*0.87-y,width*0.04,height*0.095);
         }
   
         if(comandos[i] == 'right')
         {
           let x = width*0.804;
-          let y = i*height*0.2;
+          let y = i*height*0.18;
           fill(163,92,74);
-          rect(x,height*0.8-y,width*0.135,height*0.17,height*0.035); 
-          image(seta_dir,x+width*0.05,height*0.83-y,width*0.04,height*0.1);  
+          rect(x,height*0.84-y,width*0.135,height*0.15,height*0.035); 
+          image(seta_dir,x+width*0.05,height*0.87-y,width*0.04,height*0.095);  
         }
   
         if(comandos[i] == 'down')
         {
           let x = width*0.804;
-          let y = i*height*0.2;;
+          let y = i*height*0.18;;
           fill(260,79,93);
-          rect(x,height*0.8-y,width*0.135,height*0.17,height*0.035); 
-          image(seta_bai,x+width*0.05,height*0.83-y,width*0.04,height*0.1); 
+          rect(x,height*0.84-y,width*0.135,height*0.15,height*0.035); 
+          image(seta_bai,x+width*0.05,height*0.87-y,width*0.04,height*0.095); 
         }
   
         if(comandos[i] == 'left')
         {
           let x = width*0.804;
-          let y = i*height*0.2;
+          let y = i*height*0.18;
           fill(340,100,100);
-          rect(x,height*0.8-y,width*0.135,height*0.17,height*0.035); 
-          image(seta_esq,x+width*0.05,height*0.83-y,width*0.04,height*0.1);
+          rect(x,height*0.84-y,width*0.135,height*0.15,height*0.035); 
+          image(seta_esq,x+width*0.05,height*0.87-y,width*0.04,height*0.095);
         }
       }
     }
@@ -336,7 +337,7 @@ let resu;
   
     function player()
     {
-      let rubo = image(robo,m*width*0.048, n*height*0.089, width*0.07, height*0.19);
+      let rubo = image(robo,m*width*0.048, n*height*0.075, width*0.07, height*0.19);
     }
   
     function objetivo()
