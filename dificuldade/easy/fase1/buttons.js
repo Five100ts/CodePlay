@@ -27,6 +27,8 @@ function openNav() {
     document.getElementById("resetG").style.display = "none";
     document.getElementById("confirm").style.display = "none";
     document.getElementById("myBtnDica").style.display = "none";
+    document.getElementById("canvas").style.display = "none";
+    document.getElementById("painel").style.display = "none";
     document.getElementById("mySidenav").style.width = "0%";
   }
   
@@ -38,6 +40,8 @@ function openNav() {
     document.getElementById("resetG").style.display = "block";
     document.getElementById("confirm").style.display = "block";
     document.getElementById("myBtnDica").style.display = "block";
+    document.getElementById("canvas").style.display = "block";
+    document.getElementById("painel").style.display = "block";
   }
   
   function exit(){
@@ -87,7 +91,8 @@ window.onclick = function(event) {
 
 function execute(){
   if(comandos.length>0){
-  exec();
+  // exec();
+  run();
   }
 }
 
@@ -105,7 +110,7 @@ audio3.play();
 
 
   function fail(){
-
+    
 document.getElementById("conteudoModalDefeat").style.display = "block";
 document.body.style.color = "#451C99";
 document.getElementById("menuE").style.display = "none";
@@ -115,7 +120,7 @@ document.getElementById("myBtnDica").style.display = "none";
 document.getElementById("canvas").style.display = "none";
 document.getElementById("painel").style.display = "none";
 audio4.play();
-
+    
   }
 function back1(){
   audio2.play();

@@ -13,8 +13,8 @@ html, body {
     position: fixed;
     width:5%;
     height:11.11% ;
-    left: 2.875%;
-    top: 8.61%;
+    margin-left:9.5vw;
+    bottom: 7.72%;
 
   }
   
@@ -120,8 +120,8 @@ html, body {
     position: fixed;
     width:5%;
     height:11.11%;
-    left: 90.875%;
-    top: 8.61%;
+    left: 66.7%;
+    bottom: 7.72%;
     border: none;
     cursor: pointer;/*Quando cursor está em cima do botão*/
     opacity: 0.9;
@@ -217,18 +217,18 @@ html, body {
     position: fixed;
     width:5%;
     height:11.11%;
-    left: 90.875%;
-    top: 43.77%;
+    left: 75.7%;
+    bottom:7.72%;
 
   }
 
   /* Propriedades do botão de confirmar */
   #confirm{
   position: fixed;
-  left: 90.87%;
-  right: 4.13%;
-  top: 79.17%;
-  bottom: 9.72%;
+  left: 84.7%;
+  
+  
+  bottom: 7.72%;
   width:5%;
     height:11.11%;
 
@@ -622,8 +622,8 @@ color: #FFFFFF;
 
   #canvas{
     position: fixed;
-    margin-left:9vw;
-    margin-top: 5.8vh;
+    margin-left:9.5vw;
+    margin-top: 6.8vh;
     
   }
 
@@ -632,8 +632,8 @@ color: #FFFFFF;
 #painel{
   width:80vw;
   height:13.8vh;
-  margin-top: 64.1vh;
-  margin-left:9vw;
+  margin-top: 66.1vh;
+  margin-left:9.5vw;
   background-color:white;
   display:block;
   position:fixed;
@@ -643,60 +643,66 @@ color: #FFFFFF;
 
   #direita{
     position: relative;
+    background-image:url(icons/seta_direita.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 6vh;
     background-color: #0FBD8C;
     color: #FFFFFF;
     font-family: "Orbitron";
     font-style: Medium;
     line-height: 5vh;
     display: block;
-    margin-left: auto;
-    margin-right: auto; 
     font-size: 1.5vw;
     border-radius: 7px;
-    width:6.375vw;
-    height: 50.72%;
-     left: 20vw;
-    top: 2.66vh; 
+    width: 11vw;
+    height: 65%;
+     left: 10vw;
+    top: -6.5vh; 
     border: none;
     cursor: pointer;
   }
 
   #cima{
     position: relative;
+    background-image:url(icons/seta_cima.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 6vh;
     background-color: #FFAB19;
     color: #FFFFFF;
     font-family: "Orbitron";
     font-style: Medium;
     line-height: 5vh;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 1.5vw;
     border-radius: 7px;
-    width:6.375vw;
-    height: 50.72%;
-    left: 10vw;
-    top: 2.66vh;
+    width:11vw;
+    height: 65%;
+    left: 58vw;
+    top: 2.5vh;
     border: none;
     cursor: pointer;
   }
 
   #esquerda{
     position: relative;
+    background-image:url(icons/seta_esquerda.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 6vh;
     background-color: #FF0054;
     color: #FFFFFF;
     font-family: "Orbitron";
     font-style: Medium;
     line-height: 5vh;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 1.5vw;
     border-radius: 7px;
-    width:6.375vw;
-    height: 50.72%;
-    left: 1vw;
-    top: -12.66vh;
+    width:11vw;
+    height:  65%;
+    left: 42vw;
+    top: -24.5vh;
     border: none;
     cursor: pointer;
   }
@@ -704,20 +710,22 @@ color: #FFFFFF;
 
   #baixo{
     position: relative;
-    background-color: #5522BD;
+    background-image:url(icons/seta_baixo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 6vh;
+    background-color: #6F32EC;
     color: #FFFFFF;
     font-family: "Orbitron";
     font-style: Medium;
     line-height: 5vh;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 1.5vw;
     border-radius: 7px;
-    width:6.375vw;
-    height: 50.72%;
-    left: -9vw;
-    top: -7.66vh;
+    width:11vw;
+    height:  65%;
+    left: 26vw;
+    top: -15.5vh; 
     border: none;
     cursor: pointer;
   }
