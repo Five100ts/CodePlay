@@ -277,7 +277,7 @@ let resu;
           let x = width*0.804;
           let y = i*height*0.2;
           fill(340,100,100);
-          rect(x,height*0.2-y,width*0.135,height*0.17,height*0.035); 
+          rect(x,height*0.8-y,width*0.135,height*0.17,height*0.035); 
           image(seta_esq,x+width*0.05,height*0.83-y,width*0.04,height*0.1);
         }
       }

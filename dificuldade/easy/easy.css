@@ -11,8 +11,12 @@ html, body{
 
 #btnLevel1{
     position:fixed;
-    background-image: url("icons/cadeado.svg"); /*cadeado*/
-    background-repeat: no-repeat;
+    /* background-image: url("icons/cadeado.svg"); cadeado */
+    color: #FFFFFF;
+    font-family: "Orbitron";
+    font-style: Medium;
+    line-height: 20vh;
+    font-size: 8vw;
     background-position: center;
     background-color:  #0FBD8C;
     background-size: 7.5vw 16.66vh;
@@ -28,8 +32,12 @@ html, body{
 
   #btnLevel2{
     position:fixed;
-    background-image: url("icons/cadeado.svg"); /*cadeado*/
-    background-repeat: no-repeat;
+    /* background-image: url("icons/cadeado.svg"); cadeado */
+    color: #FFFFFF;
+    font-family: "Orbitron";
+    font-style: Medium;
+    line-height: 20vh;
+    font-size: 8vw;
     background-position: center;
     background-color:  #0FBD8C;
     background-size: 7.5vw 16.66vh;
@@ -45,8 +53,12 @@ html, body{
 
   #btnLevel3{
     position:fixed;
-    background-image: url("icons/cadeado.svg"); /*cadeado*/
-    background-repeat: no-repeat;
+    /* background-image: url("icons/cadeado.svg"); cadeado */
+    color: #FFFFFF;
+    font-family: "Orbitron";
+    font-style: Medium;
+    line-height: 20vh;
+    font-size: 8vw;
     background-position: center;
     background-color:  #0FBD8C;
     background-size: 7.5vw 16.66vh;
@@ -62,8 +74,12 @@ html, body{
 
   #btnLevel4{
     position:fixed;
-    background-image: url("icons/cadeado.svg"); /*cadeado*/
-    background-repeat: no-repeat;
+    /* background-image: url("icons/cadeado.svg"); cadeado */
+    color: #FFFFFF;
+    font-family: "Orbitron";
+    font-style: Medium;
+    line-height: 20vh;
+    font-size: 8vw;
     background-position: center;
     background-color:  #0FBD8C;
     background-size: 7.5vw 16.66vh;
@@ -80,8 +96,12 @@ html, body{
 
   #btnLevel5{
     position:fixed;
-    background-image: url("icons/cadeado.svg"); /*cadeado*/
-    background-repeat: no-repeat;
+    /* background-image: url("icons/cadeado.svg"); cadeado */
+    color: #FFFFFF;
+    font-family: "Orbitron";
+    font-style: Medium;
+    line-height: 20vh;
+    font-size: 8vw;
     background-position: center;
     background-color:  #0FBD8C;
     background-size: 7.5vw 16.66vh;
@@ -97,8 +117,12 @@ html, body{
 
   #btnLevel6{
     position:fixed;
-    background-image: url("icons/cadeado.svg"); /*cadeado*/
-    background-repeat: no-repeat;
+    /* background-image: url("icons/cadeado.svg"); cadeado */
+    color: #FFFFFF;
+    font-family: "Orbitron";
+    font-style: Medium;
+    line-height: 20vh;
+    font-size: 8vw;
     background-position: center;
     background-color:  #0FBD8C;
     background-size: 7.5vw 16.66vh;
@@ -114,12 +138,12 @@ html, body{
 
   #btnLevel7{
     position:fixed;
-    background-image: url("icons/cadeado.svg"); /*cadeado*/
+    background-image: url("icons/cadeadoF.svg"); /*cadeado*/
     background-repeat: no-repeat;
     background-position: center;
-    background-color:  #0FBD8C;
+    background-color:  #169A75;
     background-size: 7.5vw 16.66vh;
-    box-shadow: 0px 2.5vh #159A75;
+    box-shadow: 0px 2.5vh #0C5843;
     width: 12.5% ; /*tamanho fixo do botão*/
     height: 27.5%;
     left:51.875%;

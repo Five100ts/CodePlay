@@ -508,7 +508,7 @@ top: 63.88%;
 position: fixed;
 width: 12.625%;
 height: 13.33%;
-left: 18.5%;
+left: 23%;
 top: 42.77%;
 
 font-family: 'Kanit';
@@ -524,7 +524,7 @@ color: #FFFFFF;
 position: fixed;
 width: 28.25%;
 height: 13.33%;
-left: 18.5%;
+left: 23%;
 top: 60.27%;
 
 font-family: 'Kanit';
@@ -560,19 +560,19 @@ color: #FFFFFF;
   
   #myRangeM{
     position: fixed;
-    top: 49.16%;
+    top: 50.16%;
     left: 54%;
   }
   
   #myRangeE{
     position: fixed;
-    top: 67.77%;
+    top: 68.77%;
     left: 54%;
   }
   
   .slider {
     -webkit-appearance: none;
-    width: 25.125%;
+    width: 22.125%;
     height: 0.8vh;
     border-radius: 10px;
     background: #ffffff;

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
   <link rel="stylesheet" type="text/css" href="fase4.css" >
   <link href='https://css.gg/chevron-left-o.css' rel='stylesheet'>
   <meta charset="UTF-8">
@@ -8,14 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kanit:wght@300;500;700&family=Orbitron:wght@500&display=swap');
      @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kanit:wght@300;500;700&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kanit:wght@300;500;700&family=Orbitron:wght@500&display=swap');
   </style>
 </head>
 
 <body>
   <!--Criação do menu lateral-->
-  <p id="demo"></p>
+  
   <div id="mySidenav" class="sidenav">
     <!--Botões do menu-->
     <input type="image" src = "icons/sair.svg"  class="closebtn" onclick="closeNav()">
@@ -31,7 +33,7 @@
     <div id = conteudoModalDica class="modal-content-dica">
       
       <h2 id="intru">Instrução</h2>
-      <h3 id="infutru">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet risus convallis, varius ipsum ac, laoreet massa. Donec tempus.</h3>
+      <h3 id="infutru">Você pode repetir um comando várias vezes!</h3>
       <input type="image" src = "icons/sair.svg" class="closeDica">
     </div>
   </div>
@@ -93,12 +95,20 @@
   <!-- Outros botões da tela -->
   <input type="image" src = "icons/menu.svg" id="menuE" onclick="openNav()">
   <input type="image" src = "icons/reset.svg" id="resetG" onclick="reset()">
-  <input type="image" src = "icons/confirm.svg" id="confirm" onclick="randomN()">
+  <input type="image" src = "icons/confirm.svg" id="confirm" onclick="execute()">
   <input type= "image"  src="icons/dica.svg"  id="myBtnDica">
       
+ 
+  <div id="painel">
+
+  </div>
       
+
+
   <script src="buttons.js"></script>
   <script src="fase4.js"></script>
+  <script src="game.js"></script>
+  
 
 </body>
 </html>
