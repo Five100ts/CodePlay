@@ -101,7 +101,7 @@ let resu;
   
   function setup() 
     {
-      createCanvas(windowWidth*0.8, windowHeight*0.54);
+      createCanvas(window.innerWidth*0.8, window.innerHeight*0.54);
       colorMode(HSB, 360, 100, 100);
       canvas.id = 'canvas';
       //valor das coordenadas do jogador
