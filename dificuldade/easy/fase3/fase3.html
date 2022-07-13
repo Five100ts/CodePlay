@@ -33,7 +33,7 @@
     <div id = conteudoModalDica class="modal-content-dica">
       
       <h2 id="intru">Instrução</h2>
-      <h3 id="infutru">A execução funciona com um comando de cada vez!</h3>
+      <h3 id="infutru">Essa é bem fácil, você só precisa seguir em frente!</h3>
       <input type="image" src = "icons/sair.svg" class="closeDica">
     </div>
   </div>
@@ -43,11 +43,13 @@
   <div id = conteudoModalVitory class="modal-content-victory">
     <p id ="titulo">PARABÉNS</p>
 
-    <input type="image" src="icons/star.svg" id ="star1">
-    <input type="image" src="icons/star.svg" id ="star2">
-    <input type="image" src="icons/star.svg" id ="star3">
-    <input type="image" src="icons/star.svg" id ="star4">
-    <input type="image" src="icons/star.svg" id ="star5">
+    <input type="image" src="icons/robo_hap.svg" id ="roboH1">
+    <div id = "men2" class ="grid-container">
+      <p id ="mensagemV">Você conseguiu cumprir o trajeto!</p>
+    </div>
+    
+  
+    <input type="image" src="icons/robo_hap.svg" id ="roboH2">
     
 
     <input type="image" src="icons/home.svg" id ="homeI" onclick="back1()">
@@ -61,11 +63,13 @@
   <div id = "conteudoModalDefeat" class="modal-content-defeat">
     <p id ="titulo2">TENTE NOVAMENTE</p>
 
-    <input type="image" src="icons/eStar.svg" id ="eStar1">
-    <input type="image" src="icons/eStar.svg" id ="eStar2">
-    <input type="image" src="icons/eStar.svg" id ="eStar3">
-    <input type="image" src="icons/eStar.svg" id ="eStar4">
-    <input type="image" src="icons/eStar.svg" id ="eStar5">
+    <input type="image" src="icons/robo_sad.svg" id ="roboS1">
+    <div id = "men1" class ="grid-container">
+      <p id ="mensagemD">Que pena, você não cumpriu o trajeto!</p>
+    </div>
+    
+  
+    <input type="image" src="icons/robo_sad.svg" id ="roboS2">
     
 
     <input type="image" src="icons/home.svg" id ="homeI2" onclick="back1()">
@@ -95,7 +99,7 @@
   <!-- Outros botões da tela -->
   <input type="image" src = "icons/menu.svg" id="menuE" onclick="openNav()">
   <input type="image" src = "icons/reset.svg" id="resetG" onclick="reset()">
-  <input type="image" src = "icons/confirm.svg" id="confirm" onclick="execute()">
+  <input type="image" src = "icons/confirm.svg" id="confirm" onclick="run()">
   <input type= "image"  src="icons/dica.svg"  id="myBtnDica">
       
  
@@ -108,6 +112,7 @@
   <script src="buttons.js"></script>
   <script src="fase3.js"></script>
   <script src="game.js"></script>
+  
   
 
 </body>

@@ -307,48 +307,42 @@ top: 63.88%;
   top: 63.88%;
 }
 
-#star1{
+#roboS1{
   position: fixed;
-  width: 6.25%;
-  height: 13.88%;
-  left: 27%;
-  top: 43.05%;
+  width: 18vw;
+  height: 42.5vh;
+  left: 20%;
+  top: 35.05%;
 
 }
 
-#star2{
-  position: fixed;
-  width: 6.25%;
-  height: 13.88%;
-  left: 37%;
-  top: 43.05%;
-
+#men1{
+  display: grid;
+position: center;
+padding: 0 35vh;
+bottom: 10vh;
+}
+#mensagemD{
+  position: relative;
+  /* width: auto; */
+  /* height: auto; */
+  /* left: calc(50% + 8rem); */
+  /* top: calc(30% - 4rem); */
+  text-align: center;
+  top: -30%;
+  /* padding: 0% 30%;  */
+  font-family: 'Kanit';
+  font-size: 3vw;
+  /* line-height: 16.66%; */
+  color: #FFFFFF;
 }
 
-#star3{
+#roboS2{
   position: fixed;
-  width: 6.25%;
-  height: 13.88%;
-  left: 47%;
-  top: 43.05%;
-
-}
-
-#star4{
-  position: fixed;
-  width: 6.25%;
-  height: 13.88%;
-  left: 57%;
-  top: 43.05%;
-
-}
-
-#star5{
-  position: fixed;
-  width: 6.25%;
-  height: 13.88%;
-  left: 67%;
-  top: 43.05%;
+  width: 18vw;
+  height: 42.5vh;
+  left: 62%;
+  top: 35.05%;
 
 }
 
@@ -377,6 +371,7 @@ top: 63.88%;
 
 
 .modal-content-defeat {
+  
   display: none;
   position: fixed;
   width: 68.75%;
@@ -419,55 +414,45 @@ top: 63.88%;
   top: 63.88%;
 }
 
-#eStar1{
+#roboH1{
   position: fixed;
-  width: 6.25%;
-  height: 13.88%;
-  left: 27%;
-  top: 43.05%;
+  width: 18vw;
+  height: 42.5vh;
+  left: 20%;
+  top: 35.05%;
 
 }
 
-#eStar2{
-  position: fixed;
-  width: 6.25%;
-  height: 13.88%;
-  left: 37%;
-  top: 43.05%;
-
+#men2{
+  display: grid;
+position: center;
+padding: 0 35vh;
+bottom: 10vh;
+}
+#mensagemV{
+  position: relative;
+  /* width: auto; */
+  /* height: auto; */
+  /* left: calc(50% + 8rem); */
+  /* top: calc(30% - 4rem); */
+  text-align: center;
+  top: -30%;
+  /* padding: 0% 30%;  */
+  font-family: 'Kanit';
+  font-size: 3vw;
+  /* line-height: 16.66%; */
+  color: #FFFFFF;
 }
 
-#eStar3{
+#roboH2{
   position: fixed;
-  width: 6.25%;
-  height: 13.88%;
-  left: 47%;
-  top: 43.05%;
+  width: 18vw;
+  height: 42.5vh;
+  left: 62%;
+  top: 35.05%;
+
 
 }
-
-#eStar4{
-  position: fixed;
-  width: 6.25%;
-  height: 13.88%;
-  left: 57%;
-  top: 43.05%;
-
-}
-
-#eStar5{
-  position: fixed;
-  width: 6.25%;
-  height: 13.88%;
-  left: 67%;
-  top: 43.05%;
-
-}
-
-
-
-
-
 
 
 
