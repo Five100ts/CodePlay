@@ -1,4 +1,4 @@
-var audio2 = new Audio('./b2.mp3');
+var audio2 = new Audio('sons/b2.mp3');
 
 function back1(){
   audio2.play();
@@ -7,4 +7,4 @@ function back1(){
 
   let musi = document.getElementById("myMusic");
   let volu = document.getElmenteByType()
-  musi.volume = 0.08*value;
+  // musi.volume = 0.08*value;

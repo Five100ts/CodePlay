@@ -1,4 +1,4 @@
-var audio = new Audio('./b1.mp3');
+var audio = new Audio('sons/b1.mp3');
 
 function confi(){
   audio.play();
@@ -11,4 +11,4 @@ function confi(){
   }
 
   let musi = document.getElementById("myMusic");
-  musi.volume = 0.1;
+  // musi.volume = 0.1;

@@ -1,5 +1,5 @@
-var audio = new Audio('./b1.mp3');
-var audio2 = new Audio('./b2.mp3');
+var audio = new Audio('sons/b1.mp3');
+var audio2 = new Audio('sons/b2.mp3');
 
 function fase1(){
   audio.play();

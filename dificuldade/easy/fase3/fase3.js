@@ -286,8 +286,8 @@ let resu;
   
     function preload()
     {
-      robo = loadImage("sprits/robo.svg")
-      bateria = loadImage("sprits/bateria.svg")
+      robo = loadImage("sprites/robo.svg")
+      bateria = loadImage("sprites/bateria.svg")
       seta_esq = loadImage("icons/seta_esquerda.svg")
       seta_dir = loadImage("icons/seta_direita.svg")
       seta_cima = loadImage("icons/seta_cima.svg")
