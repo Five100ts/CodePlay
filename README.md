@@ -12,6 +12,11 @@ WILSON JOSÉ DO NASCIMENTO JUNIOR
 
 Projeto: Code Play
 
+Apresentação da aplicação Code Play:
+https://www.youtube.com/watch?v=lyK9B5s1NfQ
+
+Como executar o jogo CodePlay:
+https://youtu.be/fLFvzZGJqx0
 
 
 Descrição do cliente e do projeto
@@ -21,18 +26,9 @@ Notamos que, dentre as necessidades específicas do cliente, no que se diz respe
 Deste modo, o objetivo do projeto da equipe é implementar uma aplicação que permita aos alunos da eletiva de Gamificação da Ciência ter um suporte tecnológico dentro da eletiva, na forma de um jogo que os ensine, de forma básica, lógica de programação. Assim, eles terão um meio digital e visual para aprender a criar jogos.
 
 
-
-
-![tabela1](https://user-images.githubusercontent.com/105827097/173984272-440a756b-96e8-470b-b6ff-02dd72d4fee3.png)
-
-![tabela2](https://user-images.githubusercontent.com/105827097/173984321-0d180881-c65c-4379-a0de-06ecf66ec87c.png)
-
-![tabela3](https://user-images.githubusercontent.com/105827097/173984327-0618bfb7-f736-4b1b-9220-bda24bfc6185.png)
-
-![tabela4](https://user-images.githubusercontent.com/105827097/173984367-67485dbd-35b6-4536-a849-c6189eece734.png)
-
-![tabela5](https://user-images.githubusercontent.com/105827097/173984381-c160b25f-ab8e-433c-bbc6-3dc1e14cf7e0.png)
-
-![tabela6](https://user-images.githubusercontent.com/105827097/173984446-0d87d523-cb18-4775-88bd-242ce374689b.png)
-
-![tabela7](https://user-images.githubusercontent.com/105827097/173984454-a0aa1b59-03c6-4c83-b6de-5548daef8054.png)
+![Página 1](https://user-images.githubusercontent.com/105827097/178882725-bd7fbd4f-0bed-4980-ae1e-72bbb2cff4c9.png)
+![página 2](https://user-images.githubusercontent.com/105827097/178882741-4dfcec3d-fa46-426c-97e3-1028379539ae.png)
+![página 3](https://user-images.githubusercontent.com/105827097/178882756-d170ca2a-dafd-478f-a4cb-4619d67d2dd6.png)
+![página 4](https://user-images.githubusercontent.com/105827097/178882781-b645e5e2-29ce-4167-8976-dce629417986.png)
+![página 5](https://user-images.githubusercontent.com/105827097/178882787-c8d5d0da-28d5-4ef7-845b-9e8de516669a.png)
+![página 6](https://user-images.githubusercontent.com/105827097/178882855-cb4b9fe6-ed1b-4bcd-b009-60db77ecfb34.png)
