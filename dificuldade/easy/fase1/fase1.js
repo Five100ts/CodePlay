@@ -1,4 +1,4 @@
-//Painel onde cola ficam os blocos
+//Painel onde ficam os blocos
 function createPanel()
 {
 	const painel = document.getElementById('painel');
@@ -69,7 +69,7 @@ function createPanel()
   }
 }
 
-//Negócio que pinta tundo na tela que seja HTML e fica ao rredor do bagulho
+//Desenha o painel
 (function main()
 {
 	createPanel();
@@ -79,7 +79,7 @@ function createPanel()
 let m, n;
  //Vetor que vai receber os blocos
 let comandos = [];
-//Teste
+//Variaveis que vão definir alguns eventos
 let primeiro = comandos[0];
 let obj = new Boolean(false);
 let iniciar = new Boolean(false);
@@ -118,8 +118,9 @@ let resu;
       player();
       // noStroke();
       
-      console.log(everyinterval(100));
-      console.log(resu);
+  
+
+        // Quando o botão de confirmar for apertado, esse if ira ler cada um dos blocos e executar as instruções no robo
       if(iniciar==true)
       {
         if(everyinterval(100))
@@ -232,15 +233,19 @@ let resu;
         setTimeout(fail,2000);
         resu=0;
       } 
+
+      //Retangulo que divide o mapa e o bloco que recebe os blocos
       fill(260,82,74);
       rect(width*0.70,0,width*0.04,height*1.1);  
     }
 
+    //Responsividade do canvas 
     function windowResized()
     {
       resizeCanvas(windowWidth*0.8, windowHeight*0.54);
     }
 
+    //Recebe os blocos que o usuario interagiu e desenha
     function vetor()
     {
       for(let i = 0;i<comandos.length;i++)
@@ -282,7 +287,8 @@ let resu;
         }
       }
     }
-  
+    
+    //Carrega os sprites
     function preload()
     {
       robo = loadImage("sprites/robo.svg")
@@ -293,6 +299,7 @@ let resu;
       seta_bai = loadImage("icons/seta_baixo.svg")
     }
   
+    //Desenha o mapa com base nos valores da matriz
     function mapa() 
     {
       for(let i = 0; i<map.length;i++)
@@ -334,11 +341,14 @@ let resu;
       }
     }
   
+    //Desenha o personagem controlado pelo jogador (o robô)
     function player()
     {
       let rubo = image(robo,m*width*0.048, n*height*0.075, width*0.07, height*0.19);
     }
   
+
+    //Desenha o objetivo da fase (a bateria)
     function objetivo()
     {
       for(let i = 0; i<map.length;i++)
@@ -387,11 +397,12 @@ let resu;
       iniciar=true;
     }
 
+    //Um "cronometro" para fazer os intervalos entre cada movimento do robô
     function everyinterval(n) 
     {
       if ((frameCount / n) % 1 == 0) {return true;}
       return false;
     }
 
-//BOTÃO DE EXECUTAR - Lê os comandos de cada bloco e implemento no movimento do jogador
+
 
