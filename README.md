@@ -25,7 +25,9 @@ https://www.youtube.com/watch?v=lyK9B5s1NfQ
 Como executar o jogo CodePlay:
 https://youtu.be/fLFvzZGJqx0
 
+
 Modelo conceitual da solução
+
 ![Modelo conceitual da solução](https://user-images.githubusercontent.com/105827097/178889437-3b0e010f-e13e-4f38-9bc8-f6ccc35a05c4.jpeg)
 
 
