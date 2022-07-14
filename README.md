@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=lyK9B5s1NfQ
 Como executar o jogo CodePlay:
 https://youtu.be/fLFvzZGJqx0
 
-Tecnologias e linguagens
+
 
 Ferrmanetas:
 Adobe illustrator
