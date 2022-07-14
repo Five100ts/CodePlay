@@ -12,18 +12,30 @@ WILSON JOSÉ DO NASCIMENTO JUNIOR
 
 Projeto: Code Play
 
-Apresentação da aplicação Code Play:
-https://www.youtube.com/watch?v=lyK9B5s1NfQ
-
-Como executar o jogo CodePlay:
-https://youtu.be/fLFvzZGJqx0
-
 
 Descrição do cliente e do projeto
 
 O nosso projeto terá como cliente a Escola Telina Barbosa da Costa, localizada no bairro de Messejana, em Fortaleza. Em uma visita à instituição, nossa atenção foi cativada pela eletiva de Gamificação da Ciência, cujos alunos do 1° ano do ensino médio podem escolher participar durante o semestre. A eletiva promove aos alunos uma tentativa de fazê-los obter conhecimento sobre as Ciências (biologia, matemática, química etc.) de uma forma na qual eles possam desenvolver seus próprios jogos e, com isso, também aprender a respeito dos assuntos das matérias.
 Notamos que, dentre as necessidades específicas do cliente, no que se diz respeito à eletiva, está a falta de suporte tecnológico na realização destas atividades. Ou seja, a finalidade da eletiva de gamificar os estudos das ciências, com o objetivo de diverti-los e atraí-los, acaba se esvaindo, visto que os alunos pouco se interessam ao realizar as atividades de criação de jogos somente manual. Portanto, a partir de conversas com a professora da eletiva, percebemos uma abundância de críticas pela falta de uso de alguma tecnologia ofertada a esses alunos na realização dos trabalhos.
 Deste modo, o objetivo do projeto da equipe é implementar uma aplicação que permita aos alunos da eletiva de Gamificação da Ciência ter um suporte tecnológico dentro da eletiva, na forma de um jogo que os ensine, de forma básica, lógica de programação. Assim, eles terão um meio digital e visual para aprender a criar jogos.
+
+Apresentação da aplicação Code Play:
+https://www.youtube.com/watch?v=lyK9B5s1NfQ
+
+Como executar o jogo CodePlay:
+https://youtu.be/fLFvzZGJqx0
+
+Tecnologias e linguagens
+
+Ferrmanetas:
+Adobe illustrator
+Figma
+
+Linguagens:
+Html5
+Css
+JavaScript
+P5.js (biblioteca)
 
 
 ![Página 1](https://user-images.githubusercontent.com/105827097/178882725-bd7fbd4f-0bed-4980-ae1e-72bbb2cff4c9.png)
