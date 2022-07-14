@@ -28,14 +28,10 @@ https://youtu.be/fLFvzZGJqx0
 
 
 Ferrmanetas:
-Adobe illustrator
-Figma
+Adobe illustrator e Figma
 
 Linguagens:
-Html5
-Css
-JavaScript
-P5.js (biblioteca)
+Html5, Css, JavaScript e P5.js (biblioteca)
 
 
 ![Página 1](https://user-images.githubusercontent.com/105827097/178882725-bd7fbd4f-0bed-4980-ae1e-72bbb2cff4c9.png)
